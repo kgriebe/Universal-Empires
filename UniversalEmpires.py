@@ -10,7 +10,7 @@ import os
 
 def main():
     
-    # Create a new player, including file and starting attributes.
+    # Create a new player, player file and starting attributes.
     new_player("Kris")
     
 if __name__ == "__main__":

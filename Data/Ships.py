@@ -1,75 +1,89 @@
-Laser - Red - Rigelli
-Autocannon - Green - Altairi
-Plasma - Blue - Dropa
-Tachyon - Black - Lyra
-Ion - White - Sylvin
+Laser - Red - RUFS (Regelli Unified Federation Starcraft) - Regelli
+Autocannon - Green - AMV (Altairi Military Vehicle) - Altairi
+Plasma - Blue - DIC (Dropa Intersteller Craft) - Dropa
+Tachyon - Black - LBS (Lyra Battle Ship) - Lyra
+Ion - White - STS (Sylvin Tactical Ship) - Sylvin
 
 Support:
-    Laser - Rigelli Salvager (1) | Rigelli Patcher (2) | Rigelli Nano-Triage Platform (3) | Regelli Mobile Stardock (4) | RUF Stardust (5)
-    Autocannon - Altairi Salvager (1) | Altairi Patcher (2) | Altairi Nano-Triage Platform (3) | Altairi Mobile Stardock (4) | Baldr (5)
-    Plasma - Dropa Salvager (1) | Dropa Patcher (2) | Dropa Nano-Triage Platform (3) | Dropa Mobile Stardock (4) | DCS Ultgard (5)
-    Tachyon - Lyra Salvager (1) | Lyra Patcher (2) | Lyra Nano-Triage Platform (3) | Lyra Mobile Stardock (4) | LBS Hyperion (5)
-    Ion - Sylvin Salvager (1) | Sylvin Patcher (2) | Sylvin Nano-Triage Platform (3) | Sylvin Mobile Stardock (4) | STS Horizon (5)
+    Laser - Rigelli Salvager (1) | Rigelli Patcher (2) | Rigelli Nano-Triage Platform (3) | RUF Mobile Stardock (4) | RUFS 'Stardust' (5)
+    Autocannon - AMV Salvager (1) | AMV Patcher (2) | AMV Nano-Triage Platform (3) | AMV Mobile Stardock (4) | AMV 'Baldr' (5)
+    Plasma - DCS Salvager (1) | DCS Patcher (2) | DCS Nano-Triage Platform (3) | DCS Mobile Stardock (4) | DIC 'Ultgard' (5)
+    Tachyon - LBS Salvager (1) | LBS Patcher (2) | LBS Nano-Triage Platform (3) | LBS Mobile Stardock (4) | LBS 'Hyperion' (5)
+    Ion - STS Salvager (1) | STS Patcher (2) | STS Nano-Triage Platform (3) | STS Mobile Stardock (4) | STS 'Horizon' (5)
     
 Defense Platforms:
-    Laser - Regelli Light Defense Platform (1) | Regelli Medium Defense Platform (2) | Regelli Large Defense Platform (3) | Regelli Fleet Defense Platform (4) | RUF Gravity Well (5)
-    Autocannon - Altairi Light Defense Platform (1) | Altairi Medium Defense Platform (2) | Altairi Large Defense Platform (3) | Altairi Fleet Defense Platform (4) | AMV Loki (5)
-    Plasma - Dropa Light Defense Platform (1) | Dropa Medium Defense Platform (2) | Dropa Large Defense Platform (3) | Dropa Fleet Defense Platform (4) | DCS Strakka (5)
-    Tachyon - Lyra Light Defense Platform (1) | Lyra Medium Defense Platform (2) | Lyra Large Defense Platform (3) | Lyra Fleet Defense Platform (4) | LBS Oceanus (5)
-    Ion - Sylvin Light Defense Platform (1) | Sylvin Medium Defense Platform (2) | Sylvin Large Defense Platform (3) | Sylvin Fleet Defense Platform (4) | STS Anvil (5)
+    Laser - RUF Light Defense Platform (1) | RUF Medium Defense Platform (2) | RUF Large Defense Platform (3) | RUF Fleet Defense Platform (4) | RUFS 'Gravity Well' (5)
+    Autocannon - AMV Light Defense Platform (1) | AMV Medium Defense Platform (2) | AMV Large Defense Platform (3) | AMV Fleet Defense Platform (4) | AMV 'Loki' (5)
+    Plasma - DCS Light Defense Platform (1) | DCS Medium Defense Platform (2) | DCS Large Defense Platform (3) | DCS Fleet Defense Platform (4) | DIC 'Strakka' (5)
+    Tachyon - LBS Light Defense Platform (1) | LBS Medium Defense Platform (2) | LBS Large Defense Platform (3) | LBS Fleet Defense Platform (4) | LBS 'Oceanus' (5)
+    Ion - STS Light Defense Platform (1) | STS Medium Defense Platform (2) | STS Large Defense Platform (3) | STS Fleet Defense Platform (4) | STS 'Anvil' (5)
     
 Cruiser
-    Laser - Regelli Small Cruiser (1) | Regelli Battlecruiser (2) | Regelli Heavy Attack Cruiser (3) | Regelli Starcruiser (4) | RUF Pulsar (5)
-    Autocannon - Altairi Small Cruiser (1) | Altairi Battlecruiser (2) | Altairi Heavy Attack Cruiser (3) | Altairi Starcruiser (4) | AMV Odin (5)
-    Plasma - Dropa Small Cruiser (1) | Dropa Battlecruiser (2) | Dropa Heavy Attack Cruiser (3) | Dropa Starcruiser (4) | DCS Condar-Rok (5)
-    Tachyon - Lyra Small Cruiser (1) | Lyra Battlecruiser (2) | Lyra Heavy Attack Cruiser (3) | Lyra Starcruiser (4) | LBS Coeus (5)
-    Ion - Sylvin Small Cruiser (1) | Sylvin Battlecruiser (2) | Sylvin Heavy Attack Cruiser (3) | Sylvin Starcruiser (4) | STS Infinity (5)
+    Laser - RUF Small Cruiser (1) | RUF Battlecruiser (2) | RUF Heavy Attack Cruiser (3) | RUF Starcruiser (4) | RUFS 'Pulsar' (5)
+    Autocannon - AMV Small Cruiser (1) | AMV Battlecruiser (2) | AMV Heavy Attack Cruiser (3) | AMV Starcruiser (4) | AMV 'Odin' (5)
+    Plasma - DCS Small Cruiser (1) | DCS Battlecruiser (2) | DCS Heavy Attack Cruiser (3) | DCS Starcruiser (4) | DIC 'Condar-Rok' (5)
+    Tachyon - LBS Small Cruiser (1) | LBS Battlecruiser (2) | LBS Heavy Attack Cruiser (3) | LBS Starcruiser (4) | LBS 'Coeus' (5)
+    Ion - STS Small Cruiser (1) | STS Battlecruiser (2) | STS Heavy Attack Cruiser (3) | STS Starcruiser (4) | STS 'Infinity' (5)
     
 Destroyer
-    Laser - Regelli Light Interceptor (1) | Regelli Interdictor (2) | Regelli Advanced Interceptor (3) | Regelli Stealth Interdictor (4) | RUF Supernova (5)
-    Autocannon - Altairi Light Interceptor (1) | Altairi Interdictor (2) | Altairi Advanced Interceptor (3) | Altairi Stealth Interdictor (4) | AMV Hel (5)
-    Plasma - Dropa Light Interceptor (1) | Dropa Interdictor (2) | Dropa Advanced Interceptor (3) | Dropa Stealth Interdictor (4) | DCS Althius (5)
-    Tachyon - Lyra Light Interceptor (1) | Lyra Interdictor (2) | Lyra Advanced Interceptor (3) | Lyra Stealth Interdictor (4) | LBS Cronus (5)
-    Ion - Sylvin Light Interceptor (1) | Sylvin Interdictor (2) | Sylvin Advanced Interceptor (3) | Sylvin Stealth Interdictor (4) | STS Illusion (5)
+    Laser - RUF Light Interceptor (1) | RUF Interdictor (2) | RUF Advanced Interceptor (3) | RUF Stealth Interdictor (4) | RUFS 'Supernova' (5)
+    Autocannon - AMV Light Interceptor (1) | AMV Interdictor (2) | AMV Advanced Interceptor (3) | AMV Stealth Interdictor (4) | AMV 'Hel' (5)
+    Plasma - DCS Light Interceptor (1) | DCS Interdictor (2) | DCS Advanced Interceptor (3) | DCS Stealth Interdictor (4) | DIC 'Althius' (5)
+    Tachyon - LBS Light Interceptor (1) | LBS Interdictor (2) | LBS Advanced Interceptor (3) | LBS Stealth Interdictor (4) | LBS 'Cronus' (5)
+    Ion - STS Light Interceptor (1) | STS Interdictor (2) | STS Advanced Interceptor (3) | STS Stealth Interdictor (4) | STS 'Illusion' (5)
     
 Carrier
-    Laser - Regelli Small Troop Transport (1) | Regelli Battlefield Resupply Tanker (2) | Regelli Logistics Command Carrier (3) | Regelli Mothership (4) | RUF Neutrino (5)
-    Autocannon - Altairi Small Troop Transport (1) | Altairi Battlefield Resupply Tanker (2) | Altairi Logistics Command Carrier (3) | Altairi Mothership (4) | AMV Sigyn (5)
-    Plasma - Dropa Small Troop Transport (1) | Dropa Battlefield Resupply Tanker (2) | Dropa Logistics Command Carrier (3) | Dropa Mothership (4) | DCS Nandi (5)
-    Tachyon - Lyra Small Troop Transport (1) | Lyra Battlefield Resupply Tanker (2) | Lyra Logistics Command Carrier (3) | Lyra Mothership (4) | LBS Helios (5)
-    Ion - Sylvin Small Troop Transport (1) | Sylvin Battlefield Resupply Tanker (2) | Sylvin Logistics Command Carrier (3) | Sylvin Mothership (4) | STS Containment (5)
+    Laser - RUF Battlefield Resupply Tanker (2) | RUF Logistics Command Carrier (3) | RUF Mothership (4) | RUFS 'Neutrino' (5)
+    Autocannon - AMV Battlefield Resupply Tanker (2) | AMV Logistics Command Carrier (3) | AMV Mothership (4) | AMV 'Sigyn' (5)
+    Plasma - DCS Battlefield Resupply Tanker (2) | DCS Logistics Command Carrier (3) | DCS Mothership (4) | DIC 'Nandi' (5)
+    Tachyon - LBS Battlefield Resupply Tanker (2) | LBS Logistics Command Carrier (3) | LBS Mothership (4) | LBS 'Helios' (5)
+    Ion - STS Battlefield Resupply Tanker (2) | STS Logistics Command Carrier (3) | STS Mothership (4) | STS 'Containment' (5)
     
 Corvette
-    Laser - Regelli Fast Attack Squadron (1) | Regelli Combat Air Patrol (2) | Regelli Rapid-Fire LAC (3) | Regelli SAD Squadron (4) | RUF Nebula (5)
-    Autocannon - Altairi Fast Attack Squadron (1) | Altairi Combat Air Patrol (2) | Altairi Rapid-Fire LAC (3) | Altairi SAD Squadron (4) | AMV Zisa (5)
-    Plasma - Dropa Fast Attack Squadron (1) | Dropa Combat Air Patrol (2) | Dropa Rapid-Fire LAC (3) | Dropa SAD Squadron (4) | DCS Cho-Gra (5)
-    Tachyon - Lyra Fast Attack Squadron (1) | Lyra Combat Air Patrol (2) | Lyra Rapid-Fire LAC (3) | Lyra SAD Squadron (4) | LBS Leto (5)
-    Ion - Sylvin Fast Attack Squadron (1) | Sylvin Combat Air Patrol (2) | Sylvin Rapid-Fire LAC (3) | Sylvin SAD Squadron (4) | STS Equilibrium (5)
+    Laser - RUF Fast Attack Squadron (1) | RUF Combat Air Patrol (2) | RUF Rapid-Fire LAC (3) | RUF SAD Squadron (4) | RUFS 'Nebula' (5)
+    Autocannon - AMV Fast Attack Squadron (1) | AMV Combat Air Patrol (2) | AMV Rapid-Fire LAC (3) | AMV SAD Squadron (4) | AMV 'Zisa' (5)
+    Plasma - DCS Fast Attack Squadron (1) | DCS Combat Air Patrol (2) | DCS Rapid-Fire LAC (3) | DCS SAD Squadron (4) | DIC 'Cho-Gra' (5)
+    Tachyon - LBS Fast Attack Squadron (1) | LBS Combat Air Patrol (2) | LBS Rapid-Fire LAC (3) | LBS SAD Squadron (4) | LBS 'Leto' (5)
+    Ion - STS Fast Attack Squadron (1) | STS Combat Air Patrol (2) | STS Rapid-Fire LAC (3) | STS SAD Squadron (4) | STS 'Equilibrium' (5)
     
 Bomber
-    Laser - Regelli Bomber (1) | Regelli
-    Autocannon - Altairi Bomber (1) | Altairi
-    Plasma - Dropa Bomber (1) | Dropa
-    Tachyon - Lyra Bomber (1) | Lyra
-    Ion - Sylvin Bomber (1) | Sylvin
+    Laser - RUF Attack Bomber (1) | RUF Mobile Anti-Capital Platform (2) | RUF Tactical Missile Battery (3) | RUF Heavy Ordinance Delivery Starship (4) | RUFS 'Event Horizon' (5)
+    Autocannon - AMV Attack Bomber (1) | AMV Mobile Anti-Capital Platform (2) | AMV Tactical Missile Battery (3) | AMV Heavy Ordinance Delivery Starship (4) | AMV 'Hoenir' (5)
+    Plasma - DCS Attack Bomber (1) | DCS Mobile Anti-Capital Platform (2) | DCS Tactical Missile Battery (3) | DCS Heavy Ordinance Delivery Starship (4) | DIC 'Mishtra' (5)
+    Tachyon - LBS Attack Bomber (1) | LBS Mobile Anti-Capital Platform (2) | LBS Tactical Missile Battery (3) | LBS Heavy Ordinance Delivery Starship (4) | LBS 'Atlas' (5)
+    Ion - STS Attack Bomber (1) | STS Mobile Anti-Capital Platform (2) | STS Tactical Missile Battery (3) | STS Heavy Ordinance Delivery Starship (4) | STS 'Darkstar' (5)
     
 Fighter
-    Laser - Regelli
-    Autocannon - Altairi
-    Plasma - Dropa
-    Tachyon - Lyra
-    Ion - Sylvin
+    Laser - RUF Autonomous Combat System (1) | RUF Light Fighter (2) | RUF Fighter Swarm (3) | RUF Primary Combat Air Group (4) | RUFS 'Tidal Force' (5)
+    Autocannon - AMV Autonomous Combat System (1) | AMV Light Fighter (2) | AMV Fighter Swarm (3) | AMV Primary Combat Air Group (4) | AMV 'Dagr' (5)
+    Plasma - DCS Autonomous Combat System (1) | DCS Light Fighter (2) | DCS Fighter Swarm (3) | DCS Primary Combat Air Group (4) | DIC 'Zolf' (5)
+    Tachyon - LBS Autonomous Combat System (1) | LBS Light Fighter (2) | LBS Fighter Swarm (3) | LBS Primary Combat Air Group (4) | LBS 'Eos' (5)
+    Ion - STS Autonomous Combat System (1) | STS Light Fighter (2) | STS Fighter Swarm (3) | STS Primary Combat Air Group (4) | STS 'Skydragon' (5)
     
 Dreadnaught
-    Laser - Regelli
-    Autocannon - Altairi
-    Plasma - Dropa
-    Tachyon - Lyra
-    Ion - Sylvin
+    Laser - RUF (3) | RUF (4) | RUFS 'Redshift' (5)
+    Autocannon - AMV (3) | AMV (4) | AMV 'Wrath of Tyr' (5)
+    Plasma - DCS (3) | DCS (4) | DIC 'Anthalii' (5)
+    Tachyon - LBS (3) | LBS (4) | LBS 'Asteria' (5)
+    Ion - STS (3) | STS (4) | STS 'Helix' (5)
     
 Leviathan
-    Laser - Regelli
-    Autocannon - Altairi
-    Plasma - Dropa
-    Tachyon - Lyra
-    Ion - Sylvin
+    Laser - RUF (4) | RUFS 'Quantum Exposure'(5)
+    Autocannon - AMV (4) | AMV 'Hammer of Sif'(5)
+    Plasma - DCS (4) | DIC 'Sorb a-Lesha'(5)
+    Tachyon - LBS (4) | LBS 'Revenge of Tethys'(5)
+    Ion - STS (4) | STS 'Singularity' (5)
+    
+Super-Destroyer
+    Laser - RUFS (4) | RUFS (5)
+    Autocannon - AMV (4) | AMV (5)
+    Plasma - DCS (4) | DCS (5)
+    Tachyon - LBS (4) | LBS (5)
+    Ion - STS (4) | STS (5)
+    
+Star Station
+    Laser - RUFS (5)
+    Autocannon - AMV (5)
+    Plasma - DCS (5)
+    Tachyon - LBS (5)
+    Ion - STS (5)

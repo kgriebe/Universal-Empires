@@ -1,5 +1,8 @@
 #!/bin/python
 
+import sys
+import os
+
 class player():
     def __init__(self):
         self.name = ""
@@ -15,9 +18,13 @@ def new_player(name):
     x.credits = "1000"
     x.fuel_rods = "0"
     
-    f = open("./Players/" + x.name, 'a')
-    f.write("Name: " + x.name + '\n')
-    f.write("Rank: " + x.rank + '\n')
-    f.write("Credits: " + x.credits + '\n')
-    f.write("Fuel Rods: " + x.fuel_rods + '\n')
-    f.close
+    if os.path.exists("./Players/" + x.name):
+        print "Player already exists!"
+        sys.exit(1)
+    else:
+        f = open("./Players/" + x.name, 'a')
+        f.write("Name: " + x.name + '\n')
+        f.write("Rank: " + x.rank + '\n')
+        f.write("Credits: " + x.credits + '\n')
+        f.write("Fuel Rods: " + x.fuel_rods + '\n')
+        f.close
