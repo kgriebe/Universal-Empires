@@ -1,0 +1,127 @@
+Types:
+Laser - Red - Rigelli
+Autocannon - Green - Altairi
+Plasma - Blue - Dropa
+Tachyon - Black - Lyra
+Ion - White - Sylvin
+
+
+Rigelli
+Altairi
+Dropa
+Lyra
+Sylvin
+
+Class Designations:
+
+Ursa
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Virgo
+    Support
+    Frigate
+    Lyra
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Lynx
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Hydra
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Andromeda
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Tucana
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Draco
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Omega
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Centaurus
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
+Canis
+    Support
+    Frigate
+    Cruiser
+    Destroyer
+    Carrier
+    Corvette
+    Bomber
+    Fighter
+    Dreadnaught
+    Leviathan
