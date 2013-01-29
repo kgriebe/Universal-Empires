@@ -14,7 +14,7 @@ def main():
     # Create a new player, player file and starting attributes.
 #    new_player("Kris")
     
-    new_ship()
+    new_ship("5")
     
 if __name__ == "__main__":
         main()
