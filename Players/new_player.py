@@ -10,6 +10,7 @@ class player():
         self.rank = ""
         self.credits = ""
         self.fuel_rods = ""
+        self.tech = ""
     
 def new_player(name):
     x = player()
@@ -17,6 +18,7 @@ def new_player(name):
     x.rank = "1"
     x.credits = "1000"
     x.fuel_rods = "0"
+    x.tech = "0"
     
     if os.path.exists("./Players/" + x.name):
         print "Player already exists!"

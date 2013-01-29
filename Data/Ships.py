@@ -5,7 +5,7 @@ Tachyon - Black - LBS (Lyra Battle Ship) - Lyra
 Ion - White - STS (Sylvin Tactical Ship) - Sylvin
 
 Support:
-    Laser - Rigelli Salvager (1) | Rigelli Patcher (2) | Rigelli Nano-Triage Platform (3) | RUF Mobile Stardock (4) | RUFS 'Stardust' (5)
+    Laser - RUF Salvager (1) | RUF Patcher (2) | RUF Nano-Triage Platform (3) | RUF Mobile Stardock (4) | RUFS 'Stardust' (5)
     Autocannon - AMV Salvager (1) | AMV Patcher (2) | AMV Nano-Triage Platform (3) | AMV Mobile Stardock (4) | AMV 'Baldr' (5)
     Plasma - DCS Salvager (1) | DCS Patcher (2) | DCS Nano-Triage Platform (3) | DCS Mobile Stardock (4) | DIC 'Ultgard' (5)
     Tachyon - LBS Salvager (1) | LBS Patcher (2) | LBS Nano-Triage Platform (3) | LBS Mobile Stardock (4) | LBS 'Hyperion' (5)
@@ -61,25 +61,25 @@ Fighter
     Ion - STS Autonomous Combat System (1) | STS Light Fighter (2) | STS Fighter Swarm (3) | STS Primary Combat Air Group (4) | STS 'Skydragon' (5)
     
 Dreadnaught
-    Laser - RUF (3) | RUF (4) | RUFS 'Redshift' (5)
-    Autocannon - AMV (3) | AMV (4) | AMV 'Wrath of Tyr' (5)
-    Plasma - DCS (3) | DCS (4) | DIC 'Anthalii' (5)
-    Tachyon - LBS (3) | LBS (4) | LBS 'Asteria' (5)
-    Ion - STS (3) | STS (4) | STS 'Helix' (5)
+    Laser - RUF Planetary Bombardment System (3) | RUF Annihilator (4) | RUFS 'Redshift' (5)
+    Autocannon - AMV Planetary Bombardment System (3) | AMV Annihilator (4) | AMV 'Wrath of Tyr' (5)
+    Plasma - DCS Planetary Bombardment System (3) | DCS Annihilator (4) | DIC 'Anthalii' (5)
+    Tachyon - LBS PLanetary Bombardment System (3) | LBS Annihilator (4) | LBS 'Asteria' (5)
+    Ion - STS PLanetary Bombardment System (3) | STS Annihilator (4) | STS 'Helix' (5)
     
 Leviathan
-    Laser - RUF (4) | RUFS 'Quantum Exposure'(5)
-    Autocannon - AMV (4) | AMV 'Hammer of Sif'(5)
-    Plasma - DCS (4) | DIC 'Sorb a-Lesha'(5)
-    Tachyon - LBS (4) | LBS 'Revenge of Tethys'(5)
-    Ion - STS (4) | STS 'Singularity' (5)
+    Laser - RUF Local Fleet Coordination Facility (4) | RUFS 'Quantum Exposure'(5)
+    Autocannon - AMV Local Fleet Coordination Facility (4) | AMV 'Hammer of Sif'(5)
+    Plasma - DCS Local Fleet Coordination Facility (4) | DIC 'Sorb a-Lesha'(5)
+    Tachyon - LBS Local Fleet Coordination Facility (4) | LBS 'Revenge of Tethys'(5)
+    Ion - STS Local Fleet Coordination Facility (4) | STS 'Singularity' (5)
     
 Super-Destroyer
-    Laser - RUFS (4) | RUFS (5)
-    Autocannon - AMV (4) | AMV (5)
-    Plasma - DCS (4) | DCS (5)
-    Tachyon - LBS (4) | LBS (5)
-    Ion - STS (4) | STS (5)
+    Laser - RUFS Advanced Tactical Combat Destroyer (4) | RUFS (5)
+    Autocannon - AMV Advanced Tactical Combat Destroyer (4) | AMV (5)
+    Plasma - DCS Advanced Tactical Combat Destroyer (4) | DCS (5)
+    Tachyon - LBS Advanced Tactical Combat Destroyer (4) | LBS (5)
+    Ion - STS Advanced Tactical Combat Destroyer (4) | STS (5)
     
 Star Station
     Laser - RUFS (5)
