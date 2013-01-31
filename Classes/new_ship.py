@@ -20,8 +20,7 @@ def id_search(id_num):
 	if id_num in amv_json:
 		print "AMV"
 	elif id_num in dic_json:
-		print "DIC"
-		
+		print "DIC"	
 	elif id_num in lbs_json:
 		print "LBS"
 	elif id_num in rufs_json:

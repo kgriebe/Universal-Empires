@@ -9,10 +9,12 @@ from Classes.new_ship import *
 
 def main():
     
-    # Create a new player, player file and starting attributes.
-#    new_player("Kris")
-    
-    id_search("21")
+# 	Create a new player, player file and starting attributes.
+	new_player("Kris")
+
+#	id_search("2")
+
+
  	   
 if __name__ == "__main__":
         main()

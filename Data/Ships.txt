@@ -5,33 +5,35 @@
 #Ion - White - STS (Sylvin Tactical Ship) - Sylvin
 
 #Support:
-    1 RUFS Salvager (1)
-    2 RUFS Patcher (2)
-    3 RUFS Nano-Triage Platform (3)
+#Hardpoints: (3) = 1 Engine; (4) = 1 Engine; (5) = 1 Engine, 1 Shield
+    1 RUFS Salvage Corvette (1)
+    2 RUFS Patch Frigate (2)
+    3 RUFS Nano-Triage Cruiser (3)
     4 RUFS Mobile Stardock (4)
     5 RUFS 'Stardust' (5)
-    6 AMV Salvager (1)
-    7 AMV Patcher (2)
-    8 AMV Nano-Triage Platform (3)
+    6 AMV Salvage Corvette (1)
+    7 AMV Patch Frigate (2)
+    8 AMV Nano-Triage Cruiser (3)
     9 AMV Mobile Stardock (4)
     10 AMV 'Baldr' (5)
-    11 DIC Salvager (1)
-    12 DIC Patcher (2)
-    13 DIC Nano-Triage Platform (3)
+    11 DIC Salvage Corvette (1)
+    12 DIC Patch Frigate (2)
+    13 DIC Nano-Triage Cruiser (3)
     14 DIC Mobile Stardock (4)
     15 DIC 'Ultgard' (5)
-    16 LBS Salvager (1)
-    17 LBS Patcher (2)
-    18 LBS Nano-Triage Platform (3)
+    16 LBS Salvage Corvette (1)
+    17 LBS Patch Frigate (2)
+    18 LBS Nano-Triage Cruiser (3)
     19 LBS Mobile Stardock (4)
-    20 LBS 'Hyperion' (5)
-    21 STS Salvager (1)
-    22 STS Patcher (2)
-    23 STS Nano-Triage Platform (3)
+    20 LBS 'Hyperionides'  (5)
+    21 STS Salvage Corvette (1)
+    22 STS Patch Frigate (2)
+    23 STS Nano-Triage Cruiser (3)
     24 STS Mobile Stardock (4)
     25 STS 'Horizon' (5)
     
 #Defense Platforms:
+#Hardpoints: (3) = 1 Armor; (4) = 1 Armor, 1 Shield; (5) = 2 Armor, 1 Shield
     26 RUFS Light Defense Platform (1)
     27 RUFS Medium Defense Platform (2)
     28 RUFS Large Defense Platform (3)
@@ -58,7 +60,8 @@
     49 STS Fleet Defense Platform (4)
     50 STS 'Anvil' (5)
     
-#Cruiser
+#Cruiser:
+#Hardpoints: (3) = 1 Weapon; (4) = 1 Weapon, 1 Shield; (5) = 1 Weapon, 1 Shield, 1 Armor
     51 RUFS Small Cruiser (1)
     52 RUFS Battlecruiser (2)
     53 RUFS Heavy Attack Cruiser (3)
@@ -85,7 +88,8 @@
     74 STS Starcruiser (4)
     75 STS 'Infinity' (5)
     
-#Destroyer
+#Interdictors:
+#Hardpoints: (3) = 1 Engine; (4) = 1 Engine; (5) = 1 Engine, 1 Weapon
     76 RUFS Light Interceptor (1)
     77 RUFS Interdictor (2)
     78 RUFS Advanced Interceptor (3)
@@ -112,29 +116,32 @@
     99 STS Stealth Interdictor (4)
     100 STS 'Illusion' (5)
     
-#Carrier
+#Carrier:
+#Hardpoints: (3) = 1 Engine, 1 Armor; (4) = 1 Engine, 1 Armor, 1 Shield; (5) = 1 Engine, 2 Armor, 1 Shield
     101 RUFS Battlefield Resupply Tanker (2)
     102 RUFS Logistics Command Carrier (3)
-    103 RUFS Mothership (4)
+    103 RUFS Ardent Class Supercarrier(4)
     104 RUFS 'Neutrino' (5)
     105 AMV Battlefield Resupply Tanker (2)
     106 AMV Logistics Command Carrier (3)
-    107 AMV Mothership (4)
+    107 AMV Eclipse Class Supercarrier (4)
     108 AMV 'Sigyn' (5)
     109 DIC Battlefield Resupply Tanker (2)
     110 DIC Logistics Command Carrier (3)
-    111 DIC Mothership (4)
+    111 DIC Entropy Class Supercarrier (4)
     112 DIC 'Nandi' (5)
     113 LBS Battlefield Resupply Tanker (2)
     114 LBS Logistics Command Carrier (3)
-    115 LBS Mothership (4)
+    115 LBS Sunfire Class Supercarrier (4)
     116 LBS 'Helios' (5)
     117 STS Battlefield Resupply Tanker (2)
     118 STS Logistics Command Carrier (3)
-    119 STS Mothership (4)
+    119 STS Sylph Class Supercarrier (4)
     120 STS 'Containment' (5)
     
 #Corvette
+#Hartpoints: (4) = 1 Engine; (5) = 1 Engine, 1 Weapon 
+#(LAC = Light Attack Craft | SAD = Search and Destroy)
     121 RUFS Fast Attack Squadron (1)
     122 RUFS Combat Air Patrol (2)
     123 RUFS Rapid-Fire LAC (3)
@@ -162,60 +169,63 @@
     145 STS 'Equilibrium' (5)
     
 #Bomber
+#Hardpoints: (4) = 1 Weapon; (5) = 2 Engines
     146 RUFS Attack Bomber (1)
-    147 RUFS Mobile Anti-Capital Platform (2)
-    148 RUFS Tactical Missile Battery (3)
-    149 RUFS Heavy Ordinance Delivery Starship (4)
+    147 RUFS Mobile Anti-Capital Corvette (2)
+    148 RUFS Tactical Missile Frigate (3)
+    149 RUFS Heavy Bomber (4)
     150 RUFS 'Event Horizon' (5)
     151 AMV Attack Bomber (1)
-    152 AMV Mobile Anti-Capital Platform (2)
-    153 AMV Tactical Missile Battery (3)
-    154 AMV Heavy Ordinance Delivery Starship (4)
+    152 AMV Mobile Anti-Capital Corvette (2)
+    153 AMV Tactical Missile Frigate (3)
+    154 AMV Heavy Bomber (4)
     155 AMV 'Hoenir' (5)
     156 DIC Attack Bomber (1)
-    157 DIC Mobile Anti-Capital Platform (2)
-    158 DIC Tactical Missile Battery (3)
-    159 DIC Heavy Ordinance Delivery Starship (4)
+    157 DIC Mobile Anti-Capital Corvette (2)
+    158 DIC Tactical Missile Frigate (3)
+    159 DIC Heavy Bomber (4)
     160 DIC 'Mishtra' (5)
     161 LBS Attack Bomber (1)
-    162 LBS Mobile Anti-Capital Platform (2)
-    163 LBS Tactical Missile Battery (3)
-    164 LBS Heavy Ordinance Delivery Starship (4)
-    165 LBS 'Atlas' (5)
+    162 LBS Mobile Anti-Capital Corvette (2)
+    163 LBS Tactical Missile Frigate (3)
+    164 LBS Heavy Bomber (4)
+    165 LBS 'Might of Atlas' (5)
     166 STS Attack Bomber (1)
-    167 STS Mobile Anti-Capital Platform (2)
-    168 STS Tactical Missile Battery (3)
-    169 STS Heavy Ordinance Delivery Starship (4)
+    167 STS Mobile Anti-Capital Corvette (2)
+    168 STS Tactical Missile Frigate (3)
+    169 STS Heavy Bomber (4)
     170 STS 'Darkstar' (5)
     
 #Fighter
-    171 RUFS Autonomous Combat System (1)
+#Hardpoints: (4) = 1 Weapon, 1 Shield; (5) = 2 Weapon, 1 Shield
+    171 RUFS Autonomous Combat Drone (1)
     172 RUFS Light Fighter (2)
     173 RUFS Fighter Swarm (3)
     174 RUFS Primary Combat Air Group (4)
     175 RUFS 'Tidal Force' (5)
-    176 AMV Autonomous Combat System (1)
+    176 AMV Autonomous Combat Drone (1)
     177 AMV Light Fighter (2)
     178 AMV Fighter Swarm (3)
     179 AMV Primary Combat Air Group (4)
     180 AMV 'Dagr' (5)
-    181 DIC Autonomous Combat System (1)
+    181 DIC Autonomous Combat Drone (1)
     182 DIC Light Fighter (2)
     183 DIC Fighter Swarm (3)
     184 DIC Primary Combat Air Group (4)
     185 DIC 'Zolf' (5)
-    186 LBS Autonomous Combat System (1)
+    186 LBS Autonomous Combat Drone (1)
     187 LBS Light Fighter (2)
     188 LBS Fighter Swarm (3)
     189 LBS Primary Combat Air Group (4)
     190 LBS 'Eos' (5)
-    191 STS Autonomous Combat System (1)
+    191 STS Autonomous Combat Drone (1)
     192 STS Light Fighter (2)
     193 STS Fighter Swarm (3)
     194 STS Primary Combat Air Group (4)
     195 STS 'Skydragon' (5)
     
 #Dreadnaught
+#Hardpoints: (3) = 1 Weapon, 1 Armor; (4) = 2 Weapon, 1 Armor; (5) = 3 Weapon, 1 Armor, 1 Shield
     196 RUFS Planetary Bombardment System (3)
     197 RUFS Annihilator (4)
     198 RUFS 'Redshift' (5)
@@ -233,6 +243,7 @@
     210 STS 'Helix' (5)
     
 #Leviathan
+#Hardpoints: (4) = 2 Armor, 1 Shield; (5) = 3 Armor, 2 Shield, 1 Weapon
     211 RUFS Local Fleet Coordination Facility (4)
     212 RUFS 'Quantum Exposure' (5)
     213 AMV Local Fleet Coordination Facility (4)
@@ -245,6 +256,7 @@
     220 STS 'Singularity' (5)
     
 #Super-Destroyer
+#Hardpoints: (4) = 2 Weapon; (5) 4 Weapon
     221 RUFS Advanced Tactical Combat Destroyer (4)
     222 RUFS 'Atomic Wrath' (5)
     223 AMV Advanced Tactical Combat Destroyer (4)
@@ -257,8 +269,177 @@
     230 STS 'Constellation' (5)
     
 #Star Station
+#Hardpoints: (5) = 4 Weapon, 2 Armor, 4 Shield
     231 RUFS 'Sirius 5' (5)
     232 AMV 'Odinforge' (5)
     233 DIC 'Mir Tine' (5)
     234 LBS 'Hearth of Iapetus' (5)
     235 STS 'Corona' (5)
+
+#Harvesters
+#Hardpoints: (3) = 1 Shield; (4) = 2 Shield; (5) = 2 Shield, 1 Armor
+    236 RUFS Battlefield Harvester (1)
+    237 RUFS Advanced Battlefield Harvester (2)
+    238 RUFS Scrap Gleaner (3)
+    239 RUFS Reaper (4)
+    240 RUFS 'Solar Storm'
+    241 AMV Battlefield Harvester (1)
+    242 AMV Advanced Battlefield Harvester (2)
+    243 AMV Scrap Gleaner (3)
+    244 AMV Reaper (4)
+    245 AMV 'Solbane'
+    246 DIC Battlefield Harvester (1)
+    247 DIC Advanced Battlefield Harvester (2)
+    248 DIC Scrap Gleaner (3)
+    249 DIC Reaper (4)
+    250 DIC 'Zeth Aline'
+    251 LBS Battlefield Harvester (1)
+    252 LBS Advanced Battlefield Harvester (2)
+    253 LBS Scrap Gleaner (3)
+    254 LBS Reaper (4)
+    255 LBS 'Selen's Beauty'
+    256 STS Battlefield Harvester (1)
+    257 STS Advanced Battlefield Harvester (2)
+    258 STS Scrap Gleaner (3)
+    259 STS Reaper (4)
+    260 STS 'Deep Core'
+
+#Mine Layers
+#Hardpoints: (4) = 2 Armor; (5) = 2 Armor, 1 Weapon
+    261 RUFS Minelayer (1)
+    262 RUFS Defense Matrix Propogation Destroyer (2)
+    263 RUFS Starsystem Minefield Supervisor (3)
+    264 RUFS Stellar Automated Minefield (4)
+    265 RUFS 'Gamma Wave'
+    266 AMV Minelayer (1)
+    267 AMV Defense Matrix Propogation Destroyer (2)
+    268 AMV Starsystem Minefield Supervisor (3)
+    269 AMV Stellar Automated Minefield (4)
+    270 AMV 'Embrace of Sjofn'
+    271 DIC Minelayer (1)
+    272 DIC Defense Matrix Propogation Destroyer (2)
+    273 DIC Starsystem Minefield Supervisor (3)
+    274 DIC Stellar Automated Minefield (4)
+    275 DIC 'Allistar'
+    276 LBS Minelayer (1)
+    277 LBS Defense Matrix Propogation Destroyer (2)
+    278 LBS Starsystem Minefield Supervisor (3)
+    279 LBS Stellar Automated Minefield (4)
+    280 LBS 'Burden of Atlas'
+    281 STS Minelayer (1)
+    282 STS Defense Matrix Propogation Destroyer (2)
+    283 STS Starsystem Minefield Supervisor (3)
+    284 STS Stellar Automated Minefield (4)
+    285 STS 'Xenomalleus'
+
+#Targeting Ships
+#Hardpoints: (3) = 1 Engine; (4) = 2 Engine, 1 Shield; (5) = 2 Engine, 2 Shield
+    286 RUFS Assisted Targetting Frigate (1)
+    287 RUFS Fire Direction Support Destroyer (2)
+    288 RUFS Communications Link Battlecruiser (3)
+    289 RUFS Fleet Fire Coordination Platform (4)
+    290 RUFS 'Resonance'
+    291 AMV Assisted Targetting Vessel (1)
+    292 AMV Fire Direction Support Destroyer (2)
+    293 AMV Communications Link Battlecruiser (3)
+    294 AMV Fleet Fire Coordination Platform (4)
+    295 AMV 'Forseti's Gaze'
+    296 DIC Assisted Targetting Vessel (1)
+    297 DIC Fire Direction Support Destroyer (2)
+    298 DIC Communications Link Battlecruiser (3)
+    299 DIC Fleet Fire Coordination Platform (4)
+    300 DIC 'Makomakka'
+    301 LBS Assisted Targetting Vessel (1)
+    302 LBS Fire Direction Support Destroyer (2)
+    303 LBS Communications Link Battlecruiser (3)
+    304 LBS Fleet Fire Coordination Platform (4)
+    305 LBS 'Themis Ascendant'
+    306 STS Assisted Targetting Vessel (1)
+    307 STS Fire Direction Support Destroyer (2)
+    308 STS Communications Link Battlecruiser (3)
+    309 STS Fleet Fire Coordination Platform (4)
+    310 STS 'Sharpshooter'
+
+#Mobile Fleet Depot
+#Hardpoints: (3) = 1 Shield, 1 Armor; (4) = 2 Shield, 1 Armor; (5) = 2 Shield, 2 Armor, 1 Engine
+    311 RUFS Fleet Rally Point (1)
+    312 RUFS Fleet Rally Station (2)
+    313 RUFS System-Wide Scanning Platform (3)
+    314 RUFS Battlefield Coordination Outpost (4)
+    315 RUFS 'Hypernova' (5)
+    316 AMV Fleet Rally Point (1)
+    317 AMV Fleet Rally Station (2)
+    318 AMV System-Wide Scanning Platform (3)
+    319 AMV Battlefield Coordination Outpost (4)
+    320 AMV 'Embrace of Eir'
+    321 DIC Fleet Rally Point (1)
+    322 DIC Fleet Rally Station (2)
+    323 DIC System-Wide Scanning Platform (3)
+    324 DIC Battlefield Coordination Outpost (4)
+    325 DIC 'Heltig-Stella' (5)
+    326 LBS Fleet Rally Point (1)
+    327 LBS Fleet Rally Station (2)
+    328 LBS System-Wide Scanning Platform (3)
+    329 LBS Battlefield Coordination Outpost (4)
+    330 LBS 'Mnemosyne' (5)
+    331 STS Fleet Rally Point (1)
+    332 STS Fleet Rally Station (2)
+    333 STS System-Wide Scanning Platform (3)
+    334 STS Battlefield Coordination Outpost (4)
+    335 STS 'Quantum Evolution' (5)
+
+#Destroyers
+Hardpoints: (3) = 1 Weapon; (4) = 2 Weapon; (5) = 2 Weapon
+    336 RUFS Light Destroyer (1)
+    337 RUFS Advanced Destroyer (2)
+    338 RUFS Heavy Attack Destroyer (3)
+    339 RUFS Superdestroyer (4)
+    340 RUFS 'Stargazer'
+    341 AMV Light Destroyer (1)
+    342 AMV Advanced Destroyer (2)
+    343 AMV Heavy Attack Destroyer (3)
+    344 AMV Superdestroyer (4)
+    345 AMV 'Echoes of Hoenir'
+    346 DIC Light Destroyer (1)
+    347 DIC Advanced Destroyer (2)
+    348 DIC Heavy Attack Destroyer (3)
+    349 DIC Superdestroyer (4)
+    350 DIC 'Sidleth'
+    351 LBS Light Destroyer (1)
+    352 LBS Advanced Destroyer (2)
+    353 LBS Heavy Attack Destroyer (3)
+    354 LBS Superdestroyer (4)
+    355 LBS 'Hyperion's Gaze'
+    356 STS Light Destroyer (1)
+    357 STS Advanced Destroyer (2)
+    358 STS Heavy Attack Destroyer (3)
+    359 STS Superdestroyer (4)
+    360 STS 'Ionospheric Disturbance'
+
+#Battleships
+Hardpoints: (3) = 1 Weapon, 1 Armor; (4) = 2 Weapon, 1 Armor; (5) = 3 Weapon, 1 Armor, 1 Shield
+    361 RUFS Battleship Drone (1)
+    362 RUFS Unipilot Battleship (2)
+    363 RUFS Medium Battleship (3)
+    364 RUFS Heavy Battleship (4)
+    365 RUFS 'Destruction of Gaia'
+    366 AMV Battleship Drone (1)
+    367 AMV Unipilot Battleship (2)
+    368 AMV Medium Battleship (3)
+    369 AMV Heavy Battleship (4)
+    370 AMV 'Freya's Guidance'
+    371 DIC Battleship Drone (1)
+    372 DIC Unipilot Battleship (2)
+    373 DIC Medium Battleship (3)
+    374 DIC Heavy Battleship (4)
+    375 DIC 'Lhai Al-Lhai'
+    376 LBS Battleship Drone (1)
+    377 LBS Unipilot Battleship (2)
+    378 LBS Medium Battleship (3)
+    379 LBS Heavy Battleship (4)
+    380 LBS 'Enmity of Crius'
+    381 STS Battleship Drone (1)
+    382 STS Unipilot Battleship (2)
+    383 STS Medium Battleship (3)
+    384 STS Heavy Battleship (4)
+    385 STS 'Celestial Vengeance'
