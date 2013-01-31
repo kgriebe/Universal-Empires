@@ -1,7 +1,7 @@
 #!/usr/bin/python
 from new_player import *
 import os
-from py-bcrypt import hashpw, gensalt
+from bcrypt import hashpw, gensalt
 player_dict = {}
 
 
