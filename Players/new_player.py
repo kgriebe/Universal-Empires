@@ -9,6 +9,7 @@ from collections import defaultdict
 class player():
     def __init__(self):
         self.name = ""
+        self.password = ""
         self.race = ""
         self.ship_list = {}
         self.rank = ""
@@ -16,12 +17,13 @@ class player():
         self.fuel_rods = ""
         self.tech = ""
     
-def new_player(name, race):
+def new_player(name, race, password):
     player_info = {}
     ship_list = {}
     x = player()
     x.race = race
     x.name = name
+    x.password = password
     x.rank = "1"
     x.credits = "1000"
     x.fuel_rods = "0"
@@ -58,7 +60,7 @@ def new_player(name, race):
         # Add default ships to dictionary under ship_list key
         ship_list['ship_list'].append(x.ship_list)
         # Create dictionary containing all player attributes
-        player_dict = dict([('name', x.name), ('rank', x.rank), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('ship_list', x.ship_list)])
+        player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('ship_list', x.ship_list)])
         # Insert player_dict into another dictionary with the player's name as the key
         player_info[x.name] = player_dict
         # Convert dictionary to json
