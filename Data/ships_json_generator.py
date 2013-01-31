@@ -9,12 +9,14 @@ AMV_ship_file = open("AMV_ships.json", 'w')
 LBS_ship_file = open("LBS_ships.json", 'w')
 DIC_ship_file = open("DIC_ships.json", 'w')
 STS_ship_file = open("STS_ships.json", 'w')
+id_file = open("ship_ids.json", 'w')
 RUFS_ship_dict = {}
 AMV_ship_dict = {}
 LBS_ship_dict = {}
 DIC_ship_dict = {}
 STS_ship_dict = {}
 ships_attrs = {}
+id_dict = {}
 
 # Create the dictionaries by reading from a manually created file housing a list of ships with
 # identity numbers and rarity numbers.  Sort the file into a dictionary for each race.
@@ -26,14 +28,21 @@ def dict_creator(file):
 		if ship_name:
 			if ship_name.group(2) == "RUFS":
 				RUFS_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]
+				id_dict[ship_name.group(1)] = [ship_name.group(2)]
 			elif ship_name.group(2) == "AMV":
 				AMV_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]
+				id_dict[ship_name.group(1)] = [ship_name.group(2)]
 			elif ship_name.group(2) == "LBS":
 				LBS_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]
+				id_dict[ship_name.group(1)] = [ship_name.group(2)]
 			elif ship_name.group(2) == "DIC":
 				DIC_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]
+				id_dict[ship_name.group(1)] = [ship_name.group(2)]
 			elif ship_name.group(2) == "STS":
-				STS_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]		
+				STS_ship_dict[ship_name.group(3)] = [ship_name.group(4), ship_name.group(1)]
+				id_dict[ship_name.group(1)] = [ship_name.group(2)]
+	json_string = json.dumps(id_dict)
+	id_file.write(json_string)
 
 # Update the values of the dictionary so it has the ship name, rarity, and identity number.
 # Json format the string and write it to the appropriate ship file.

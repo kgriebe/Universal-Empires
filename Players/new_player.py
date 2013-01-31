@@ -24,7 +24,7 @@ def new_player(name):
     x.fuel_rods = "0"
     x.tech = "0"
     # Use this list to set the default ships dependant upon race.
-    x.ship_list = [2, 26]
+    x.ship_list = [9, 57]
     
     # Check to make sure player doesn't already exist.
     if os.path.exists("./Players/" + x.name):
