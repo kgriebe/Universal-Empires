@@ -3,28 +3,48 @@
 import sys
 import os
 import json
+from textwrap import fill
 from collections import defaultdict
 
 class player():
     def __init__(self):
         self.name = ""
+        self.race = ""
         self.ship_list = {}
         self.rank = ""
         self.credits = ""
         self.fuel_rods = ""
         self.tech = ""
     
-def new_player(name):
+def new_player(name, race):
     player_info = {}
     ship_list = {}
     x = player()
+    x.race = race
     x.name = name
     x.rank = "1"
     x.credits = "1000"
     x.fuel_rods = "0"
     x.tech = "0"
     # Use this list to set the default ships dependant upon race.
-    x.ship_list = [9, 57]
+    if race.lower() == "rufs":
+        x.ship_list = [1, 26, 51]
+    elif race.lower() == "amv":
+        x.ship_list = [6, 31, 56]
+    elif race.lower() == "dic":
+        x.ship_list = [11, 36, 61]
+    elif race.lower() == "lbs":
+        x.ship_list = [16, 41, 66]
+    elif race.lower() == "sts":
+        x.ship_list = [21, 46, 71]
+    elif race.lower() == "help":
+        f = open("./Data/races.help", 'r')
+        for line in f:
+            output = fill(line)
+            print output + "\n"
+    else:
+        print "Invalid Race Selection."
+        sys.exit(1)
     
     # Check to make sure player doesn't already exist.
     if os.path.exists("./Players/" + x.name):
