@@ -21,11 +21,9 @@ with open("./Data/STS_ships.json") as STS_json:
 with open("./Data/ship_ids.json") as ship_ids:
     id_dict = dict(json.load(ship_ids))
 
-
-
 def main():
     
-# 	Create a new player, player file and starting attributes.
+# 	Prompt for login, load player data after login or player creation
     player_name = login()
     file_path = "./Players/" + player_name    
     with open(file_path) as player_data:
@@ -47,11 +45,6 @@ def main():
             print "STS " + STS_ships[str(ship_id)]["name"]
         else:
             print "Could not find ship id."    
-        
-#	new_player("Kris")
-
-#	id_search("2")
-
 
  	   
 if __name__ == "__main__":

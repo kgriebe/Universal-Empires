@@ -66,8 +66,6 @@ def new_player(user, race, password):
     # Write json to player file
     player_file.write(json_string)
 
-player_dict = {}
-
 
 # Get user password, encrypt it, and return.  This is only called when a new player is created.
 def password_get():
@@ -105,10 +103,5 @@ def login():
         print "Creating new player."
         password = password_get()
         player_creator(user, password)
-#        print "Creating New Player"
-#        race = raw_input("Please select your race: RUFS, AMV, DIC, LBS, STS.  Enter \"Help\" for information on each race.\n")
-#        password = password_get()
-#        new_player(user, race, password)
-
     return user
 
