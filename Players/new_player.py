@@ -40,30 +40,26 @@ def new_player(name, race, password):
     elif race.lower() == "sts":
         x.ship_list = [21, 46, 71]
     elif race.lower() == "help":
-        f = open("./Data/races.help", 'r')
-        for line in f:
+        help_file = open("./Data/races.help", 'r')
+        for line in help_file:
             output = fill(line)
             print output + "\n"
+    elif race.lower() == "quit":
+        sys.exit(0)
     else:
         print "Invalid Race Selection."
-        sys.exit(1)
     
-    # Check to make sure player doesn't already exist.
-    if os.path.exists("./Players/" + x.name):
-        print "Player already exists!"
-        sys.exit(1)
-    else:
-        # Create/Open player file
-        f = open("./Players/" + x.name, 'w')
-        # Create dictionary of lists we can use to add ships to
-        ship_list = defaultdict(list)
-        # Add default ships to dictionary under ship_list key
-        ship_list['ship_list'].append(x.ship_list)
-        # Create dictionary containing all player attributes
-        player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('ship_list', x.ship_list)])
-        # Insert player_dict into another dictionary with the player's name as the key
-        player_info[x.name] = player_dict
-        # Convert dictionary to json
-        json_string = json.dumps(player_info)
-        # Write json to player file
-        f.write(json_string)
+    # Create/Open player file
+    player_file = open("./Players/" + x.name, 'w')
+    # Create dictionary of lists we can use to add ships to
+    ship_list = defaultdict(list)
+    # Add default ships to dictionary under ship_list key
+    ship_list['ship_list'].append(x.ship_list)
+    # Create dictionary containing all player attributes
+    player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('ship_list', x.ship_list)])
+    # Insert player_dict into another dictionary with the player's name as the key
+    player_info[x.name] = player_dict
+    # Convert dictionary to json
+    json_string = json.dumps(player_info)
+    # Write json to player file
+    player_file.write(json_string)

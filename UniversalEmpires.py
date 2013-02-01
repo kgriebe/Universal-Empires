@@ -27,10 +27,11 @@ def main():
     
 # 	Create a new player, player file and starting attributes.
     player_name = login()
-    file_path = "./Players/" + player_name
-    
+    file_path = "./Players/" + player_name    
     with open(file_path) as player_data:
     	player_json = json.load(player_data)
+
+# Searching player file, comparing to ships files, printing ships player has.
     print "Your starting ships are:"
     for ship_id in player_json[player_name]["ship_list"]:
         race = id_dict[str(ship_id)]
@@ -46,12 +47,6 @@ def main():
             print "STS " + STS_ships[str(ship_id)]["name"]
         else:
             print "Could not find ship id."    
-            
-
-
-#        with open("./Data/" + race + "_ships.json") as race_json:
-#            race_ships = dict(json.load(race_json))
-#            print race_ships[ship_id]
         
 #	new_player("Kris")
 
