@@ -6,6 +6,7 @@ import json
 from textwrap import fill
 from collections import defaultdict
 from bcrypt import hashpw, gensalt
+import __builtin__
 
 class player():
     def __init__(self):
@@ -50,6 +51,7 @@ def new_player(user, race, password):
         sys.exit(0)
     else:
         print "Invalid Race Selection."
+        player_creator(user, password)
     
     # Create/Open player file
     player_file = open("./Players/" + x.name, 'w')
@@ -83,6 +85,7 @@ def player_creator(user, password):
     new_player(user, race, password)
 
 def login():
+# Print the login screen
     login_screen = open('./Data/login_screen.txt')
     os.system('clear')
     for line in login_screen:
@@ -96,6 +99,7 @@ def login():
     		player_json = json.load(player_file)
     	if hashpw(password, player_json[user]["password"]) == player_json[user]["password"]:
     	    print "Login Successful.\n"
+            __builtin__.active_user = user
     	else:
     	    print "Password does not match.  Please try again.\n"
     	    login()

@@ -4,6 +4,7 @@ from Classes.ships import *
 from Players.new_player import *
 from Players.login import *
 from Classes.new_ship import *
+from Views.selection_screen import *
 import json
 import os
 
@@ -29,22 +30,25 @@ def main():
     with open(file_path) as player_data:
     	player_json = json.load(player_data)
 
+    selection_screen()
+
+
 # Searching player file, comparing to ships files, printing ships player has.
-    print "Your starting ships are:"
-    for ship_id in player_json[player_name]["ship_list"]:
-        race = id_dict[str(ship_id)]
-        if str(ship_id) in RUFS_ships:
-            print "RUFS " + RUFS_ships[str(ship_id)]["name"]
-        elif str(ship_id) in AMV_ships:
-            print "AMV " + AMV_ships[str(ship_id)]["name"]
-        elif str(ship_id) in DIC_ships:
-            print "DIC " + DIC_ships[str(ship_id)]["name"]
-        elif str(ship_id) in LBS_ships:
-            print "LBS " + LBS_ships[str(ship_id)]["name"]
-        elif str(ship_id) in STS_ships:
-            print "STS " + STS_ships[str(ship_id)]["name"]
-        else:
-            print "Could not find ship id."    
+#    print "Your starting ships are:"
+#    for ship_id in player_json[player_name]["ship_list"]:
+#        race = id_dict[str(ship_id)]
+#        if str(ship_id) in RUFS_ships:
+#            print "RUFS " + RUFS_ships[str(ship_id)]["name"]
+#        elif str(ship_id) in AMV_ships:
+#            print "AMV " + AMV_ships[str(ship_id)]["name"]
+#        elif str(ship_id) in DIC_ships:
+#            print "DIC " + DIC_ships[str(ship_id)]["name"]
+#        elif str(ship_id) in LBS_ships:
+#            print "LBS " + LBS_ships[str(ship_id)]["name"]
+#        elif str(ship_id) in STS_ships:
+#            print "STS " + STS_ships[str(ship_id)]["name"]
+#        else:
+#            print "Could not find ship id."    
 
  	   
 if __name__ == "__main__":
