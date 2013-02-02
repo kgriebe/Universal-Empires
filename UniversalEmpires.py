@@ -26,7 +26,7 @@ def main():
     
 # 	Prompt for login, load player data after login or player creation
     player_name = login()
-    file_path = "./Players/" + player_name    
+    file_path = "./Players/" + player_name + ".data"   
     with open(file_path) as player_data:
     	player_json = json.load(player_data)
 
