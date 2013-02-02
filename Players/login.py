@@ -54,7 +54,7 @@ def new_player(user, race, password):
         player_creator(user, password)
     
     # Create/Open player file
-    player_file = open("./Players/" + x.name, 'w')
+    player_file = open("./Players/" + x.name + ".data", 'w')
     # Create dictionary of lists we can use to add ships to
     ship_list = defaultdict(list)
     # Add default ships to dictionary under ship_list key
@@ -92,7 +92,7 @@ def login():
         sys.stdout.write(line)
     print "\n"
     user = raw_input("Login: ")
-    file_path = "./Players/" + user
+    file_path = "./Players/" + user + ".data"
     if os.path.exists(file_path):
         password = raw_input("Password: ")
         with open(file_path) as player_file:
