@@ -8,19 +8,19 @@ from Views.selection_screen import *
 import json
 import os
 
-starter_ships = ()
-with open("./Data/RUFS_ships.json") as RUFS_json:
-    RUFS_ships = json.load(RUFS_json)
-with open("./Data/AMV_ships.json") as AMV_json:
-    AMV_ships = json.load(AMV_json)
-with open("./Data/DIC_ships.json") as DIC_json:
-    DIC_ships = json.load(DIC_json)
-with open("./Data/LBS_ships.json") as LBS_json:
-    LBS_ships = json.load(LBS_json)    
-with open("./Data/STS_ships.json") as STS_json:
-    STS_ships = json.load(STS_json)
-with open("./Data/ship_ids.json") as ship_ids:
-    id_dict = dict(json.load(ship_ids))
+#starter_ships = ()
+#with open("./Data/RUFS_ships.json") as RUFS_json:
+#    RUFS_ships = json.load(RUFS_json)
+#with open("./Data/AMV_ships.json") as AMV_json:
+#    AMV_ships = json.load(AMV_json)
+#with open("./Data/DIC_ships.json") as DIC_json:
+#    DIC_ships = json.load(DIC_json)
+#with open("./Data/LBS_ships.json") as LBS_json:
+#    LBS_ships = json.load(LBS_json)    
+#with open("./Data/STS_ships.json") as STS_json:
+#    STS_ships = json.load(STS_json)
+#with open("./Data/ship_ids.json") as ship_ids:
+#    id_dict = dict(json.load(ship_ids))
 
 def main():
     
@@ -29,7 +29,6 @@ def main():
     file_path = "./Players/" + player_name + ".data"   
     with open(file_path) as player_data:
     	player_json = json.load(player_data)
-
     selection_screen()
 
 

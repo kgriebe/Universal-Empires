@@ -6,29 +6,30 @@
 
 #Support:
 #Hardpoints: (3) = 1 Engine; (4) = 1 Engine; (5) = 1 Engine, 1 Shield
+    
     1 RUFS Salvage Corvette (1)
     2 RUFS Patch Frigate (2)
-    3 RUFS Nano-Triage Cruiser (3)
+    3 RUFS 'Nano Triage' Cruiser (3)
     4 RUFS Mobile Stardock (4)
     5 RUFS 'Stardust' (5)
     6 AMV Salvage Corvette (1)
     7 AMV Patch Frigate (2)
-    8 AMV Nano-Triage Cruiser (3)
+    8 AMV 'Nano Triage' Cruiser (3)
     9 AMV Mobile Stardock (4)
     10 AMV 'Baldr' (5)
     11 DIC Salvage Corvette (1)
     12 DIC Patch Frigate (2)
-    13 DIC Nano-Triage Cruiser (3)
+    13 DIC 'Nano Triage' Cruiser (3)
     14 DIC Mobile Stardock (4)
     15 DIC 'Ultgard' (5)
     16 LBS Salvage Corvette (1)
     17 LBS Patch Frigate (2)
-    18 LBS Nano-Triage Cruiser (3)
+    18 LBS 'Nano Triage' Cruiser (3)
     19 LBS Mobile Stardock (4)
     20 LBS 'Hyperionides'  (5)
     21 STS Salvage Corvette (1)
     22 STS Patch Frigate (2)
-    23 STS Nano-Triage Cruiser (3)
+    23 STS 'Nano Triage' Cruiser (3)
     24 STS Mobile Stardock (4)
     25 STS 'Horizon' (5)
     
@@ -156,7 +157,7 @@
     132 DIC Combat Air Patrol (2)
     133 DIC Rapid-Fire LAC (3)
     134 DIC SAD Squadron (4)
-    135 DIC 'Cho-Gra' (5)
+    135 DIC 'Cho Gra' (5)
     136 LBS Fast Attack Squadron (1)
     137 LBS Combat Air Patrol (2)
     138 LBS Rapid-Fire LAC (3)
@@ -432,7 +433,7 @@ Hardpoints: (3) = 1 Weapon, 1 Armor; (4) = 2 Weapon, 1 Armor; (5) = 3 Weapon, 1 
     372 DIC Unipilot Battleship (2)
     373 DIC Medium Battleship (3)
     374 DIC Heavy Battleship (4)
-    375 DIC 'Lhai Al-Lhai'
+    375 DIC 'Lhai Al Lhai'
     376 LBS Battleship Drone (1)
     377 LBS Unipilot Battleship (2)
     378 LBS Medium Battleship (3)
