@@ -7,6 +7,7 @@ from textwrap import fill
 from collections import defaultdict
 from bcrypt import hashpw, gensalt
 import __builtin__
+from time import sleep
 
 class player():
     def __init__(self):
@@ -92,6 +93,10 @@ def login():
         sys.stdout.write(line)
     print "\n"
     user = raw_input("Login: ")
+    if not user:
+        print "Invalid Selection.  Please try again."
+        sleep(2)
+        login()
     file_path = "./Players/" + user + ".data"
     if os.path.exists(file_path):
         password = raw_input("Password: ")
@@ -101,7 +106,9 @@ def login():
     	    print "Login Successful.\n"
             __builtin__.active_user = user
     	else:
-    	    print "Password does not match.  Please try again.\n"
+    	    error = "Password does not match.  Please try again.\n"
+            sys.stdout.write(error)
+            sleep(2)
     	    login()
     else:
         print "Creating new player."
