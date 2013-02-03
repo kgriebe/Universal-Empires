@@ -116,6 +116,7 @@ def main():
     # LBS_ship_file.close()
     # AMV_ship_file.close()
     # RUFS_ship_file.close()
+    ship_file.close()
 
 if __name__ == "__main__":
         main()

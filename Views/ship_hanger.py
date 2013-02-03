@@ -8,6 +8,7 @@ from Controllers.commands import command_process
 import selection_screen
 from Controllers.prompt import prompt
 from roster import roster_view
+from science import science_view
 
 def view_generator():
 	#Open file
@@ -103,5 +104,7 @@ def ship_hanger():
         selection_screen.selection_screen()
     elif selection.lower() == "roster":
         roster_view(user)
+    elif selection.lower() == "science":
+        science_view()
     os.remove("./Data/ship_hanger.txt")
 		
