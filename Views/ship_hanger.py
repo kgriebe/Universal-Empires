@@ -103,4 +103,5 @@ def ship_hanger():
         selection_screen.selection_screen()
     elif selection.lower() == "roster":
         roster_view(user)
+    os.remove("./Data/ship_hanger.txt")
 		

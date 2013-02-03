@@ -4,6 +4,37 @@ import __builtin__
 import json
 import sys
 from Controllers.prompt import prompt
+import ship_hanger
+
+with open("./Data/ships.json") as ship_data:
+    ship_json = json.load(ship_data)
+
+def selection_process(input):
+    # Load up player file
+    file_path = "./Players/" + __builtin__.active_user + ".data"
+    with open(file_path) as player_data:
+        player_json = json.load(player_data)
+    player_ship_list = player_json[__builtin__.active_user]["ship_list"]
+    if input == "info":
+        id = raw_input("\nPlease enter the ID number of the ship:\n")
+        if int(id) in player_ship_list:
+            print "\n"
+            for item, value in ship_json[str(id)].iteritems():
+                print "%s: %s" % (str(item).replace('_', ' ').title(), str(value))
+            print "\n"
+            selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
+            selection_process(selection)
+        else:
+            if id in ship_json:
+                print "You do not command that ship.\n"
+                selection_process(input)
+            else:
+                print "That vessel does not exist.\n"
+                selection_process(input)
+    elif input == "back":
+        ship_hanger.ship_hanger()
+
+
 
 def view_generator(user):
     #Open file
@@ -22,11 +53,6 @@ def view_generator(user):
     file_path = "./Players/" + __builtin__.active_user + ".data"
     with open(file_path) as player_data:
         player_json = json.load(player_data)
-
-    # Load ship file
-    ship_file_path = "./Data/ships.json"
-    with open(ship_file_path) as ship_file_json:
-        ship_json = json.load(ship_file_json)
 
     #For ships in the active ship list, create the view listing those ships.
     for id in player_json[__builtin__.active_user]["ship_list"]:
@@ -50,3 +76,4 @@ def roster_view(user):
         sys.stdout.write(line)
     print "\n"
     selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
+    selection_process(selection)
