@@ -7,9 +7,10 @@ from wormholes import wormholes
 from communications import communications
 from salvage_missions import salvage_missions
 from Controllers.commands import command_process
+from Controllers.prompt import prompt
 
 def selection_process():
-	selection = raw_input("Selection: ")
+	selection = raw_input(prompt(__builtin__.active_user))
 	# Check for exit/back commands
 	command_process(selection)
 	selection = selection.lower()
@@ -34,5 +35,7 @@ def selection_screen():
 	for line in selection_screen:
 		sys.stdout.write(line)
 	print "\n"
+	menu = "Ship Hanger | Wormholes | Salvage Missions | Communications | Exit"
+	print menu.center(80) + "\n"
 	selection_process()
 
