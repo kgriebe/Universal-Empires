@@ -3,7 +3,7 @@
 import os, sys
 import __builtin__
 from ship_hanger import ship_hanger
-from wormholes import wormholes
+from wormholes import wormholes_view
 from communications import communications
 from salvage_missions import salvage_missions
 from Controllers.commands import command_process
@@ -19,7 +19,7 @@ def selection_process():
 		f.close()
 		ship_hanger()
 	elif selection == "wormholes":
-		wormholes()
+		wormholes_view()
 	elif selection == "salvage missions":
 		salvage_missions()
 	elif selection == "communications":

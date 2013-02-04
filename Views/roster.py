@@ -2,8 +2,9 @@
 
 import __builtin__
 import json
-import sys
+import sys, os
 from Controllers.prompt import prompt
+from Controllers.commands import command_process
 import ship_hanger
 
 with open("./Data/ships.json") as ship_data:
@@ -18,12 +19,27 @@ def selection_process(input):
     if input == "info":
         id = raw_input("\nPlease enter the ID number of the ship:\n")
         if int(id) in player_ship_list:
+            os.system('clear')
             print "\n"
+            roster_view = open('./Data/roster.txt')
+            for line in roster_view:
+                sys.stdout.write(line)
+            roster_view.close()
+            print "\n\n"
+            print " " + ship_json[str(id)]["name"] + ":"    
+            print "\n"  
             for item, value in ship_json[str(id)].iteritems():
-                print "%s: %s" % (str(item).replace('_', ' ').title(), str(value))
+                if item == "name":
+                    pass
+                else:
+                    print " %s: %s" % (str(item).replace('_', ' ').title(), str(value))
             print "\n"
             selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
-            selection_process(selection)
+            if selection.lower() == "back":
+                os.system('clear')
+                roster_view(__builtin__.active_user)
+            else:
+                selection_process(selection)
         else:
             if id in ship_json:
                 print "You do not command that ship.\n"
@@ -33,6 +49,8 @@ def selection_process(input):
                 selection_process(input)
     elif input == "back":
         ship_hanger.ship_hanger()
+    else:
+        command_process(input)
 
 
 

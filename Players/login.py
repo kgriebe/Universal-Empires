@@ -19,8 +19,11 @@ class player():
         self.rank = ""
         self.credits = ""
         self.fuel_rods = ""
+        self.max_fuel_rods = ""
         self.tech = ""
         self.active_ship_list = {}
+        self.wormholes = {}
+        self.sectors = {}
 
 def new_player(user, race, password):
     player_info = {}
@@ -32,23 +35,34 @@ def new_player(user, race, password):
     x.rank = "1"
     x.credits = "1000"
     x.fuel_rods = "20"
+    x.max_fuel_rods = "20"
     x.tech = "0"
     # Use this list to set the default ships dependant upon race.
     if race.lower() == "rufs":
         x.ship_list = [1, 26, 51]
         x.active_ship_list = x.ship_list
+        x.wormholes = [1]
+        x.sectors = [2]
     elif race.lower() == "amv":
         x.ship_list = [6, 31, 56]
         x.active_ship_list = x.ship_list
+        x.wormholes = [1]
+        x.sectors = [3]
     elif race.lower() == "dic":
         x.ship_list = [11, 36, 61]
         x.active_ship_list = x.ship_list
+        x.wormholes = [1]
+        x.sectors = [4]
     elif race.lower() == "lbs":
         x.ship_list = [16, 41, 66]
         x.active_ship_list = x.ship_list
+        x.wormholes = [1]
+        x.sectors = [5]
     elif race.lower() == "sts":
         x.ship_list = [21, 46, 71]
         x.active_ship_list = x.ship_list
+        x.wormholes = [1]
+        x.sectors = [6]
     elif race.lower() == "help":
         help_file = open("./Data/races.help", 'r')
         for line in help_file:
@@ -70,7 +84,7 @@ def new_player(user, race, password):
     ship_list['ship_list'].append(x.ship_list)
     active_ship_list['active_ship_list'].append(active_ship_list)
     # Create dictionary containing all player attributes
-    player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('ship_list', x.ship_list), ('active_ship_list', x.active_ship_list)])
+    player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('max_fuel_rods', x.max_fuel_rods), ('ship_list', x.ship_list), ('active_ship_list', x.active_ship_list), ('wormholes', x.wormholes)])
     # Insert player_dict into another dictionary with the player's name as the key
     player_info[x.name] = player_dict
     # Convert dictionary to json
@@ -102,6 +116,7 @@ def login():
         sys.stdout.write(line)
     print "\n"
     user = raw_input("Login: ")
+    user = user.lower()
     __builtin__.active_user = user
     if not user:
         print "Invalid Selection.  Please try again."

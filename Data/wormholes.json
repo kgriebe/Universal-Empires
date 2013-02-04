@@ -1,0 +1,71 @@
+{"1":
+    {
+    "name": "Andromeda Cluster",
+    "id": 1,
+    "sectors": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+    "levels": []
+    },
+"2":
+    {
+    "name": "Deani I",
+    "id": 2,
+    "sectors": [],
+    "levels": [1, 2, 3, 4, 5]
+    },
+"3":
+    {
+    "name": "Deani III",
+    "id": 3,
+    "sectors": [],
+    "levels": [6, 7, 8, 9, 10]
+    },
+"4":
+    {
+    "name": "Deani VI",
+    "id": 4,
+    "sectors": [],
+    "levels": []
+    },
+"5":
+    {
+    "name": "Deani IX",
+    "id": 5,
+    "sectors": [],
+    "levels": []
+    },
+"6":
+    {
+    "name": "Eridu II",
+    "id": 6,
+    "sectors": [],
+    "levels": []
+    },
+"7":
+    {
+    "name": "6026 Antliae VII",
+    "id": 7,
+    "sectors": [],
+    "levels": []
+    },
+"8":
+    {
+    "name": "6026 Antliae XI",
+    "id": 8,
+    "sectors": [],
+    "levels": []
+    },
+"9":
+    {
+    "name": "Anu II",
+    "id": 9,
+    "sectors": [],
+    "levels": []
+    },
+"10":
+    {
+    "name": "Anu IV",
+    "id": 10,
+    "sectors": [],
+    "levels": []
+    }
+}

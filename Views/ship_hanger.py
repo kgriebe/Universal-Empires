@@ -103,6 +103,7 @@ def ship_hanger():
     if selection.lower() == "back":
         selection_screen.selection_screen()
     elif selection.lower() == "roster":
+        os.system('clear')
         roster_view(user)
     elif selection.lower() == "science":
         science_view()
