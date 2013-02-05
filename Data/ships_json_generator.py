@@ -63,7 +63,7 @@ def dict_update():
     ship_attrs_base = {"exp": 0, "level": 0, "max_level": 0, "shield_points": 0, "repair_rate": 0, 
 "damage_reduction": 0, "damage_reduction_type": 0, "attack_value": 0, "speed": 0, "skill": 0, 
 "weapon_mod": 0, "shield_mod": 0, "engine_mod": 0, "damage_type": 0, "weapon_hardpoint": 0, 
-"armor_hardpoint": 0, "shield_hardpoint": 0, "engine_hardpoint": 0, "fleet_leader_skill": ""}
+"armor_hardpoint": 0, "shield_hardpoint": 0, "engine_hardpoint": 0, "fleet_leader_skill": "", "evolves_into": ""}
 
     # Iterate over key:value pairs in dicts created by dict_creator, then create new dict containing the base attributes plus
     # newly defined attributes, then insert that into a new dictionary with the id number as the key for each object.  Then convert

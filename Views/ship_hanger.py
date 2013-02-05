@@ -107,5 +107,4 @@ def ship_hanger():
         roster_view(user)
     elif selection.lower() == "science":
         science_view()
-    os.remove("./Data/ship_hanger.txt")
 		
