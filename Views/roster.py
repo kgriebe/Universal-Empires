@@ -6,6 +6,7 @@ import sys, os
 from Controllers.prompt import prompt
 from Controllers.commands import command_process
 import ship_hanger
+from Config.vars import beginning_line, end_line, empty_line, full_line
 
 with open("./Data/ships.json") as ship_data:
     ship_json = json.load(ship_data)
@@ -21,12 +22,13 @@ def selection_process(input):
         if int(id) in player_ship_list:
             os.system('clear')
             print "\n"
-            roster_view = open('./Data/roster.txt')
-            for line in roster_view:
+            sys.stdout.write(full_line*3 + empty_line + beginning_line + ship_json[str(id)]["name"].center(50) + end_line +  empty_line)
+            sys.stdout.write(beginning_line + " Ship Name: %s" % ship_json[str(id)]["name"] + " "*(23 - len(ship_json[str(id)]["name"])) + "Level: %s" % ship_json[str(id)]["level"] + " "*(8 - len(str(ship_json[str(id)]["level"]))) + end_line)
+            roster_view_file = open('./Data/roster.txt')
+            for line in roster_view_file:
                 sys.stdout.write(line)
-            roster_view.close()
+            roster_view_file.close()
             print "\n\n"
-            print " " + ship_json[str(id)]["name"] + ":"    
             print "\n"  
             for item, value in ship_json[str(id)].iteritems():
                 if item == "name":
@@ -51,7 +53,9 @@ def selection_process(input):
         ship_hanger.ship_hanger()
     else:
         command_process(input)
-
+        print "Invalid Selection."
+        selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
+        selection_process(selection)
 
 
 def view_generator(user):
@@ -89,9 +93,13 @@ def view_generator(user):
 def roster_view(user):
     result = view_generator(user)
     if result:
-        roster_view = open('./Data/roster.txt')
-    for line in roster_view:
+        roster_view_file = open('./Data/roster.txt')
+    for line in roster_view_file:
         sys.stdout.write(line)
     print "\n"
     selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
     selection_process(selection)
+
+
+
+

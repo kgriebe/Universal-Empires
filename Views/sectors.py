@@ -8,6 +8,7 @@ from Controllers.commands import command_process
 from time import sleep
 import __builtin__
 import levels
+import wormholes
 
 with open("./Data/wormholes.json") as wormholes_data:
     wormholes_json_data = json.load(wormholes_data)
@@ -16,6 +17,8 @@ def view_creator(wormhole):
     # Create file for view and write opening
     sub_view = open("./Data/sectors.txt", 'w+')
     sub_view.write("\n" + full_line*3 + empty_line)
+    open_line = beginning_line + "Sectors:".center(50) + end_line + empty_line
+    sub_view.write(open_line)
     if wormholes_json_data[str(wormhole)]["is_wormhole"]:
         for item in wormholes_json_data[str(wormhole)]["sectors"]:
             sector = wormholes_json_data[str(item)]["name"]
@@ -27,6 +30,8 @@ def view_creator(wormhole):
 
 def selection_process(selection, wormhole):
     command_process(selection)
+    if selection == "back":
+        wormholes.wormholes_view()
     sector_id = ""
     for item in wormholes_json_data[str(wormhole)]["sectors"]:
         if selection == wormholes_json_data[str(item)]["name"].lower():

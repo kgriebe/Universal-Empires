@@ -28,7 +28,8 @@ def selection_process(selection, wormhole):
         sectors.sectors_view(wormhole)
     else:
         # Here is where we will put level select and switch to loading combat modules.
-
+        pass
+        
 def levels_view(sector_id, wormhole):
     view_creator(sector_id)
     sector_view_file = open('./Data/levels_view.txt', 'r')
