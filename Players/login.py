@@ -102,7 +102,7 @@ def password_get():
         password_get()
     else:
         hashed_password = hashpw(password, gensalt())
-    return hashed_password
+        return hashed_password
 
 def player_creator(user, password):
     race = raw_input("Please select your race: RUFS, AMV, DIC, LBS, or STS.  Enter \"Help\" for information on each race, or \"Quit\" to exit.\n")

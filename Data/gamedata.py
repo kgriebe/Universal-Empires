@@ -1,1 +1,1 @@
-current_agents = ["rufs", "sts"]
+current_agents = ["general", "rufs", "sts", "dic", "amv", "lbs"]
