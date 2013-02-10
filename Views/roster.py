@@ -11,6 +11,36 @@ from Config.vars import beginning_line, end_line, empty_line, full_line
 with open("./Data/ships.json") as ship_data:
     ship_json = json.load(ship_data)
 
+def length_finder(id, attribute):
+    result = len(str(ship_json[str(id)][attribute]))
+    return result
+
+
+
+def info_generator(id):
+    os.system('clear')
+    print "\n"
+    sys.stdout.write(full_line*3 + empty_line + beginning_line + ship_json[str(id)]["name"].center(50) + end_line +  empty_line)
+    sys.stdout.write(beginning_line + " Ship Race: %s" % ship_json[str(id)]["race"] + " "*(23 - length_finder(id, "race")) + "Level: %s\\%s" % (ship_json[str(id)]["level"], ship_json[str(id)]["max_level"]) + " "*(7 - (length_finder(id, "level") + length_finder(id, "max_level"))) + end_line)
+    sys.stdout.write(beginning_line + " Damage Type: %s" % ship_json[str(id)]["damage_type"] + " "*(21 - length_finder(id, "damage_type")) + "Exp: %s" % ship_json[str(id)]["exp"] + " "*(10 - length_finder(id, "exp")) + end_line)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(beginning_line + " Fleet Skill: %s" % ship_json[str(id)]["fleet_leader_skill"] + " "*(36 - length_finder(id, "fleet_leader_skill")) + end_line)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(full_line*2)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(beginning_line + " Skill: %s" % ship_json[str(id)]["skill"] + " "*(27 - length_finder(id, "skill")) + "Attack: %s" % ship_json[str(id)]["attack_value"] + " "*(7 - length_finder(id, "attack_value")) + end_line)
+    sys.stdout.write(beginning_line + " Ident: %s" % ship_json[str(id)]["ident"] + " "*(27 - length_finder(id, "ident")) + "Shield: %s" % ship_json[str(id)]["shield_points"] + " "*(7 - length_finder(id, "shield_points")) + end_line)
+    sys.stdout.write(beginning_line + " Rarity: %s" % ship_json[str(id)]["rarity"] + " "*(26 - length_finder(id, "rarity")) + "Repair: %s" % ship_json[str(id)]["repair_rate"] + " "*(7 - length_finder(id, "repair_rate")) + end_line)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(full_line*2)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(beginning_line + " Weapon Mod: %s" % ship_json[str(id)]["weapon_mod"] + " "*(22 - length_finder(id, "weapon_mod")) + "Max Mods: %s" % ship_json[str(id)]["weapon_hardpoint"] + " "*(5 - length_finder(id, "weapon_hardpoint")) + end_line)
+    sys.stdout.write(beginning_line + " Armor Mod: %s" % ship_json[str(id)]["armor_mod"] + " "*(23 - length_finder(id, "armor_mod")) + "Max Mods: %s" % ship_json[str(id)]["armor_hardpoint"] + " "*(5 - length_finder(id, "armor_hardpoint")) + end_line)
+    sys.stdout.write(beginning_line + " Shield Mod: %s" % ship_json[str(id)]["shield_mod"] + " "*(22 - length_finder(id, "shield_mod")) + "Max Mods: %s" % ship_json[str(id)]["shield_hardpoint"] + " "*(5 - length_finder(id, "armor_hardpoint")) + end_line)
+    sys.stdout.write(beginning_line + " Engine Mod: %s" % ship_json[str(id)]["engine_mod"] + " "*(22 - length_finder(id, "engine_mod")) + "Max Mods: %s" % ship_json[str(id)]["engine_hardpoint"] + " "*(5 - length_finder(id, "armor_hardpoint")) + end_line)
+    sys.stdout.write(empty_line)
+    sys.stdout.write(full_line*3)
+
 def selection_process(input):
     # Load up player file
     file_path = "./Players/" + __builtin__.active_user + ".data"
@@ -20,21 +50,8 @@ def selection_process(input):
     if input == "info":
         id = raw_input("\nPlease enter the ID number of the ship:\n")
         if int(id) in player_ship_list:
-            os.system('clear')
-            print "\n"
-            sys.stdout.write(full_line*3 + empty_line + beginning_line + ship_json[str(id)]["name"].center(50) + end_line +  empty_line)
-            sys.stdout.write(beginning_line + " Ship Name: %s" % ship_json[str(id)]["name"] + " "*(23 - len(ship_json[str(id)]["name"])) + "Level: %s" % ship_json[str(id)]["level"] + " "*(8 - len(str(ship_json[str(id)]["level"]))) + end_line)
-            roster_view_file = open('./Data/roster.txt')
-            for line in roster_view_file:
-                sys.stdout.write(line)
-            roster_view_file.close()
+            info_generator(id)
             print "\n\n"
-            print "\n"  
-            for item, value in ship_json[str(id)].iteritems():
-                if item == "name":
-                    pass
-                else:
-                    print " %s: %s" % (str(item).replace('_', ' ').title(), str(value))
             print "\n"
             selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
             if selection.lower() == "back":

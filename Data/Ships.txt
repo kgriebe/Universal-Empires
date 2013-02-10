@@ -245,28 +245,28 @@
     
 #Leviathan
 #Hardpoints: (4) = 2 Armor, 1 Shield; (5) = 3 Armor, 2 Shield, 1 Weapon
-    211 RUFS Local Fleet Coordination Facility (4)
+    211 RUFS Local Fleet Combat Depot (4)
     212 RUFS 'Quantum Exposure' (5)
-    213 AMV Local Fleet Coordination Facility (4)
+    213 AMV Local Fleet Combat Depot (4)
     214 AMV 'Hammer of Sif' (5)
-    215 DIC Local Fleet Coordination Facility (4)
+    215 DIC Local Fleet Combat Depot (4)
     216 DIC 'Sorb a-Lesha' (5)
-    217 LBS Local Fleet Coordination Facility (4)
+    217 LBS Local Fleet Combat Depot (4)
     218 LBS 'Revenge of Tethys' (5)
-    219 STS Local Fleet Coordination Facility (4)
+    219 STS Local Fleet Combat Depot (4)
     220 STS 'Singularity' (5)
     
 #Super-Destroyer
 #Hardpoints: (4) = 2 Weapon; (5) 4 Weapon
-    221 RUFS Advanced Tactical Combat Destroyer (4)
+    221 RUFS Advanced Tactical Destroyer (4)
     222 RUFS 'Atomic Wrath' (5)
-    223 AMV Advanced Tactical Combat Destroyer (4)
+    223 AMV Advanced Tactical Destroyer (4)
     224 AMV 'Herald of Apocalypse' (5)
-    225 DIC Advanced Tactical Combat Destroyer (4)
+    225 DIC Advanced Tactical Destroyer (4)
     226 DIC 'Ghaz Ogtar' (5)
-    227 LBS Advanced Tactical Combat Destroyer (4)
+    227 LBS Advanced Tactical Destroyer (4)
     228 LBS 'Calypso' (5)
-    229 STS Advanced Tactical Combat Destroyer (4)
+    229 STS Advanced Tactical Destroyer (4)
     230 STS 'Constellation' (5)
     
 #Star Station
@@ -280,27 +280,27 @@
 #Harvesters
 #Hardpoints: (3) = 1 Shield; (4) = 2 Shield; (5) = 2 Shield, 1 Armor
     236 RUFS Battlefield Harvester (1)
-    237 RUFS Advanced Battlefield Harvester (2)
+    237 RUFS Advanced Harvester (2)
     238 RUFS Scrap Gleaner (3)
     239 RUFS Reaper (4)
     240 RUFS 'Solar Storm'
     241 AMV Battlefield Harvester (1)
-    242 AMV Advanced Battlefield Harvester (2)
+    242 AMV Advanced Harvester (2)
     243 AMV Scrap Gleaner (3)
     244 AMV Reaper (4)
     245 AMV 'Solbane'
     246 DIC Battlefield Harvester (1)
-    247 DIC Advanced Battlefield Harvester (2)
+    247 DIC Advanced Harvester (2)
     248 DIC Scrap Gleaner (3)
     249 DIC Reaper (4)
     250 DIC 'Zeth Aline'
     251 LBS Battlefield Harvester (1)
-    252 LBS Advanced Battlefield Harvester (2)
+    252 LBS Advanced Harvester (2)
     253 LBS Scrap Gleaner (3)
     254 LBS Reaper (4)
     255 LBS 'Selen's Beauty'
     256 STS Battlefield Harvester (1)
-    257 STS Advanced Battlefield Harvester (2)
+    257 STS Advanced Harvester (2)
     258 STS Scrap Gleaner (3)
     259 STS Reaper (4)
     260 STS 'Deep Core'
@@ -308,57 +308,57 @@
 #Mine Layers
 #Hardpoints: (4) = 2 Armor; (5) = 2 Armor, 1 Weapon
     261 RUFS Minelayer (1)
-    262 RUFS Defense Matrix Propogation Destroyer (2)
-    263 RUFS Starsystem Minefield Supervisor (3)
+    262 RUFS Defense Matrix Vessel (2)
+    263 RUFS Steller Minelayer (3)
     264 RUFS Stellar Automated Minefield (4)
     265 RUFS 'Gamma Wave'
     266 AMV Minelayer (1)
-    267 AMV Defense Matrix Propogation Destroyer (2)
-    268 AMV Starsystem Minefield Supervisor (3)
+    267 AMV Defense Matrix Vessel (2)
+    268 AMV Steller Minelayer (3)
     269 AMV Stellar Automated Minefield (4)
     270 AMV 'Embrace of Sjofn'
     271 DIC Minelayer (1)
-    272 DIC Defense Matrix Propogation Destroyer (2)
-    273 DIC Starsystem Minefield Supervisor (3)
+    272 DIC Defense Matrix Vessel (2)
+    273 DIC Steller Minelayer (3)
     274 DIC Stellar Automated Minefield (4)
     275 DIC 'Allistar'
     276 LBS Minelayer (1)
-    277 LBS Defense Matrix Propogation Destroyer (2)
-    278 LBS Starsystem Minefield Supervisor (3)
+    277 LBS Defense Matrix Vessel (2)
+    278 LBS Steller Minelayer (3)
     279 LBS Stellar Automated Minefield (4)
     280 LBS 'Burden of Atlas'
     281 STS Minelayer (1)
-    282 STS Defense Matrix Propogation Destroyer (2)
-    283 STS Starsystem Minefield Supervisor (3)
+    282 STS Defense Matrix Vessel (2)
+    283 STS Steller Minelayer (3)
     284 STS Stellar Automated Minefield (4)
     285 STS 'Xenomalleus'
 
 #Targeting Ships
 #Hardpoints: (3) = 1 Engine; (4) = 2 Engine, 1 Shield; (5) = 2 Engine, 2 Shield
     286 RUFS Assisted Targetting Frigate (1)
-    287 RUFS Fire Direction Support Destroyer (2)
-    288 RUFS Communications Link Battlecruiser (3)
-    289 RUFS Fleet Fire Coordination Platform (4)
+    287 RUFS Fire Direction Uplink (2)
+    288 RUFS Targetting Battlecruiser (3)
+    289 RUFS Fire Coordination Platform (4)
     290 RUFS 'Resonance'
     291 AMV Assisted Targetting Vessel (1)
-    292 AMV Fire Direction Support Destroyer (2)
-    293 AMV Communications Link Battlecruiser (3)
-    294 AMV Fleet Fire Coordination Platform (4)
+    292 AMV Fire Direction Uplink (2)
+    293 AMV Targetting Battlecruiser (3)
+    294 AMV Fire Coordination Platform (4)
     295 AMV 'Forseti's Gaze'
     296 DIC Assisted Targetting Vessel (1)
-    297 DIC Fire Direction Support Destroyer (2)
-    298 DIC Communications Link Battlecruiser (3)
-    299 DIC Fleet Fire Coordination Platform (4)
+    297 DIC Fire Direction Uplink (2)
+    298 DIC Targetting Battlecruiser (3)
+    299 DIC Fire Coordination Platform (4)
     300 DIC 'Makomakka'
     301 LBS Assisted Targetting Vessel (1)
-    302 LBS Fire Direction Support Destroyer (2)
-    303 LBS Communications Link Battlecruiser (3)
-    304 LBS Fleet Fire Coordination Platform (4)
+    302 LBS Fire Direction Uplink (2)
+    303 LBS Targetting Battlecruiser (3)
+    304 LBS Fire Coordination Platform (4)
     305 LBS 'Themis Ascendant'
     306 STS Assisted Targetting Vessel (1)
-    307 STS Fire Direction Support Destroyer (2)
-    308 STS Communications Link Battlecruiser (3)
-    309 STS Fleet Fire Coordination Platform (4)
+    307 STS Fire Direction Uplink (2)
+    308 STS Targetting Battlecruiser (3)
+    309 STS Fire Coordination Platform (4)
     310 STS 'Sharpshooter'
 
 #Mobile Fleet Depot
@@ -366,27 +366,27 @@
     311 RUFS Fleet Rally Point (1)
     312 RUFS Fleet Rally Station (2)
     313 RUFS System-Wide Scanning Platform (3)
-    314 RUFS Battlefield Coordination Outpost (4)
+    314 RUFS Battlefield Outpost (4)
     315 RUFS 'Hypernova' (5)
     316 AMV Fleet Rally Point (1)
     317 AMV Fleet Rally Station (2)
     318 AMV System-Wide Scanning Platform (3)
-    319 AMV Battlefield Coordination Outpost (4)
+    319 AMV Battlefield Outpost (4)
     320 AMV 'Embrace of Eir'
     321 DIC Fleet Rally Point (1)
     322 DIC Fleet Rally Station (2)
     323 DIC System-Wide Scanning Platform (3)
-    324 DIC Battlefield Coordination Outpost (4)
+    324 DIC Battlefield Outpost (4)
     325 DIC 'Heltig-Stella' (5)
     326 LBS Fleet Rally Point (1)
     327 LBS Fleet Rally Station (2)
     328 LBS System-Wide Scanning Platform (3)
-    329 LBS Battlefield Coordination Outpost (4)
+    329 LBS Battlefield Outpost (4)
     330 LBS 'Mnemosyne' (5)
     331 STS Fleet Rally Point (1)
     332 STS Fleet Rally Station (2)
     333 STS System-Wide Scanning Platform (3)
-    334 STS Battlefield Coordination Outpost (4)
+    334 STS Battlefield Outpost (4)
     335 STS 'Quantum Evolution' (5)
 
 #Destroyers

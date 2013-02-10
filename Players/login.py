@@ -84,7 +84,7 @@ def new_player(user, race, password):
     ship_list['ship_list'].append(x.ship_list)
     active_ship_list['active_ship_list'].append(active_ship_list)
     # Create dictionary containing all player attributes
-    player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('max_fuel_rods', x.max_fuel_rods), ('ship_list', x.ship_list), ('active_ship_list', x.active_ship_list), ('wormholes', x.wormholes)])
+    player_dict = dict([('name', x.name), ('rank', x.rank), ('password', password), ('race', race.lower()), ('credits', x.credits), ('fuel_rods', x.fuel_rods), ('max_fuel_rods', x.max_fuel_rods), ('ship_list', x.ship_list), ('active_ship_list', x.active_ship_list), ('wormholes', x.wormholes), ('tech', x.tech)])
     # Insert player_dict into another dictionary with the player's name as the key
     player_info[x.name] = player_dict
     # Convert dictionary to json
