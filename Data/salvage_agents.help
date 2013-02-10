@@ -1,0 +1,44 @@
+************************************************************
+************************************************************
+************************************************************
+***** Agents:                                          *****
+*****      The General Agent is able to trade in tech  *****
+***** from all races. Due to limited contracts for     *****
+***** tech salvage, the general agent cannot look for  *****
+***** salvage from a specific race. The general agent  *****
+***** is less expensive to compensate.                 *****
+*****                                                  *****
+***** Each race has an Agent specializing in the       *****
+***** location of salvage from that race. The contract *****
+***** specifies that only ships of the race specified  *****
+***** will be returned from the mission.  This is more *****
+***** expensive, but can assist commanders seeking a   *****
+***** specific ship for their fleet.                   *****
+*****                                                  *****
+***** Missions:                                        *****
+*****      When contracting an agent to undertake a    *****
+***** salvage mission, commanders must provide tech to *****
+***** the agent, which can be traded by the agent for  *****
+***** ships, salvage contracts, or wormhole locations. *****
+***** For every tech spent, the agent will conduct one *****
+***** search.                                          *****
+*****                                                  *****
+***** When the commander initiates the contract, he or *****
+***** she may specify up to 5 ships (1 for every tech  *****
+***** spent, up to a limit of 5) for the agent to make *****
+***** priority targets.                                *****
+*****                                                  *****
+***** Once the commander has contracted the agent      *****
+***** and specified their priority targets, searching  *****
+***** will begin, and the agent will notify you of any *****
+***** results. Once all searches are concluded, the    *****
+***** agent will compare the results with the ship     *****
+***** list specified by the commander, and award the   *****
+***** commander the most powerful version of the ship  *****
+***** which is highest ranked on the list.  If no ship *****
+***** is matched, a random ship is returned.           *****
+*****                                                  *****
+***** For example:                                     *****
+*****      If Commander Tom spends 5 tech to contract  *****
+***** the RUFS agent, he will be allowed to choose 5   *****
+***** vessels from the RUFS list as priority targets.  *****
