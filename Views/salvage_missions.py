@@ -18,23 +18,33 @@ def selector(selection):
     user = __builtin__.active_user
     if selection == "back":
         selection_screen.selection_screen()
+    elif selection == "help":
+        helpfile = open('./Data/salvage_agents.help', 'r')
+        os.system('clear')
+        print "\n"
+        for line in helpfile:
+            sys.stdout.write(line)
+        print "\n"
+        sub_selection = raw_input("Back | Exit".center(80) + "\n\n" + prompt(user))
+        command_process(sub_selection)
+        if sub_selection == "back":
+            salvage_missions()
+
     else:
         if selection in current_agents:
             os.system('clear')
             sys.stdout.write(full_line*3)
             sys.stdout.write(empty_line)
             sys.stdout.write(full_line*3)
-            sub_selection = raw_input("Back | Help | Exit".center(80) + "\n\n" + prompt(user))
+            sub_selection = raw_input("Back | Exit".center(80) + "\n\n" + prompt(user))
             sub_selection = sub_selection.lower()
             command_process(sub_selection)
-            if sub_selection == "help":
-              print "Help"
-            elif sub_selection == "back":
-              print "Back"
+            if sub_selection == "back":
+                salvage_missions()
             else:
-              print "Invalid Selection."
-              sleep(2)
-              selector(selection)
+                print "Invalid Selection."
+                sleep(2)
+                selector(selection)
             
         else:
             print "Invalid Selection."
@@ -62,7 +72,7 @@ def salvage_missions():
     sys.stdout.write(empty_line)
     sys.stdout.write(full_line*3)
     print "\n\n"
-    selection = raw_input("Agent | Back | Exit".center(80) + "\n\n" + prompt(user))
+    selection = raw_input("Agent | Back | Help | Exit".center(80) + "\n\n" + prompt(user))
     selection = selection.lower()
     command_process(selection)
     selector(selection)
