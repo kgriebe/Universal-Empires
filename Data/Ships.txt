@@ -121,7 +121,7 @@
 #Hardpoints: (3) = 1 Engine, 1 Armor; (4) = 1 Engine, 1 Armor, 1 Shield; (5) = 1 Engine, 2 Armor, 1 Shield
     101 RUFS Battlefield Resupply Tanker (2)
     102 RUFS Logistics Command Carrier (3)
-    103 RUFS Ardent Class Supercarrier(4)
+    103 RUFS Ardent Class Supercarrier (4)
     104 RUFS 'Neutrino' (5)
     105 AMV Battlefield Resupply Tanker (2)
     106 AMV Logistics Command Carrier (3)
@@ -283,27 +283,27 @@
     237 RUFS Advanced Harvester (2)
     238 RUFS Scrap Gleaner (3)
     239 RUFS Reaper (4)
-    240 RUFS 'Solar Storm'
+    240 RUFS 'Solar Storm' (5)
     241 AMV Battlefield Harvester (1)
     242 AMV Advanced Harvester (2)
     243 AMV Scrap Gleaner (3)
     244 AMV Reaper (4)
-    245 AMV 'Solbane'
+    245 AMV 'Solbane' (5)
     246 DIC Battlefield Harvester (1)
     247 DIC Advanced Harvester (2)
     248 DIC Scrap Gleaner (3)
     249 DIC Reaper (4)
-    250 DIC 'Zeth Aline'
+    250 DIC 'Zeth Aline' (5)
     251 LBS Battlefield Harvester (1)
     252 LBS Advanced Harvester (2)
     253 LBS Scrap Gleaner (3)
     254 LBS Reaper (4)
-    255 LBS 'Selen's Beauty'
+    255 LBS 'Selen's Beauty' (5)
     256 STS Battlefield Harvester (1)
     257 STS Advanced Harvester (2)
     258 STS Scrap Gleaner (3)
     259 STS Reaper (4)
-    260 STS 'Deep Core'
+    260 STS 'Deep Core' (5)
 
 #Mine Layers
 #Hardpoints: (4) = 2 Armor; (5) = 2 Armor, 1 Weapon
@@ -311,27 +311,27 @@
     262 RUFS Defense Matrix Vessel (2)
     263 RUFS Steller Minelayer (3)
     264 RUFS Stellar Automated Minefield (4)
-    265 RUFS 'Gamma Wave'
+    265 RUFS 'Gamma Wave' (5)
     266 AMV Minelayer (1)
     267 AMV Defense Matrix Vessel (2)
     268 AMV Steller Minelayer (3)
     269 AMV Stellar Automated Minefield (4)
-    270 AMV 'Embrace of Sjofn'
+    270 AMV 'Embrace of Sjofn' (5)
     271 DIC Minelayer (1)
     272 DIC Defense Matrix Vessel (2)
     273 DIC Steller Minelayer (3)
     274 DIC Stellar Automated Minefield (4)
-    275 DIC 'Allistar'
+    275 DIC 'Allistar' (5)
     276 LBS Minelayer (1)
     277 LBS Defense Matrix Vessel (2)
     278 LBS Steller Minelayer (3)
     279 LBS Stellar Automated Minefield (4)
-    280 LBS 'Burden of Atlas'
+    280 LBS 'Burden of Atlas' (5)
     281 STS Minelayer (1)
     282 STS Defense Matrix Vessel (2)
     283 STS Steller Minelayer (3)
     284 STS Stellar Automated Minefield (4)
-    285 STS 'Xenomalleus'
+    285 STS 'Xenomalleus' (5)
 
 #Targeting Ships
 #Hardpoints: (3) = 1 Engine; (4) = 2 Engine, 1 Shield; (5) = 2 Engine, 2 Shield
@@ -339,27 +339,27 @@
     287 RUFS Fire Direction Uplink (2)
     288 RUFS Targetting Battlecruiser (3)
     289 RUFS Fire Coordination Platform (4)
-    290 RUFS 'Resonance'
+    290 RUFS 'Resonance' (5)
     291 AMV Assisted Targetting Vessel (1)
     292 AMV Fire Direction Uplink (2)
     293 AMV Targetting Battlecruiser (3)
     294 AMV Fire Coordination Platform (4)
-    295 AMV 'Forseti's Gaze'
+    295 AMV 'Forseti's Gaze' (5)
     296 DIC Assisted Targetting Vessel (1)
     297 DIC Fire Direction Uplink (2)
     298 DIC Targetting Battlecruiser (3)
     299 DIC Fire Coordination Platform (4)
-    300 DIC 'Makomakka'
+    300 DIC 'Makomakka' (5)
     301 LBS Assisted Targetting Vessel (1)
     302 LBS Fire Direction Uplink (2)
     303 LBS Targetting Battlecruiser (3)
     304 LBS Fire Coordination Platform (4)
-    305 LBS 'Themis Ascendant'
+    305 LBS 'Themis Ascendant' (5)
     306 STS Assisted Targetting Vessel (1)
     307 STS Fire Direction Uplink (2)
     308 STS Targetting Battlecruiser (3)
     309 STS Fire Coordination Platform (4)
-    310 STS 'Sharpshooter'
+    310 STS 'Sharpshooter' (5)
 
 #Mobile Fleet Depot
 #Hardpoints: (3) = 1 Shield, 1 Armor; (4) = 2 Shield, 1 Armor; (5) = 2 Shield, 2 Armor, 1 Engine
@@ -372,7 +372,7 @@
     317 AMV Fleet Rally Station (2)
     318 AMV System-Wide Scanning Platform (3)
     319 AMV Battlefield Outpost (4)
-    320 AMV 'Embrace of Eir'
+    320 AMV 'Embrace of Eir' (5)
     321 DIC Fleet Rally Point (1)
     322 DIC Fleet Rally Station (2)
     323 DIC System-Wide Scanning Platform (3)
@@ -395,27 +395,27 @@ Hardpoints: (3) = 1 Weapon; (4) = 2 Weapon; (5) = 2 Weapon
     337 RUFS Advanced Destroyer (2)
     338 RUFS Heavy Attack Destroyer (3)
     339 RUFS Superdestroyer (4)
-    340 RUFS 'Stargazer'
+    340 RUFS 'Stargazer' (5)
     341 AMV Light Destroyer (1)
     342 AMV Advanced Destroyer (2)
     343 AMV Heavy Attack Destroyer (3)
     344 AMV Superdestroyer (4)
-    345 AMV 'Echoes of Hoenir'
+    345 AMV 'Echoes of Hoenir' (5)
     346 DIC Light Destroyer (1)
     347 DIC Advanced Destroyer (2)
     348 DIC Heavy Attack Destroyer (3)
     349 DIC Superdestroyer (4)
-    350 DIC 'Sidleth'
+    350 DIC 'Sidleth' (5)
     351 LBS Light Destroyer (1)
     352 LBS Advanced Destroyer (2)
     353 LBS Heavy Attack Destroyer (3)
     354 LBS Superdestroyer (4)
-    355 LBS 'Hyperion's Gaze'
+    355 LBS 'Hyperion's Gaze' (5)
     356 STS Light Destroyer (1)
     357 STS Advanced Destroyer (2)
     358 STS Heavy Attack Destroyer (3)
     359 STS Superdestroyer (4)
-    360 STS 'Ionospheric Disturbance'
+    360 STS 'Ionospheric Disturbance' (5)
 
 #Battleships
 Hardpoints: (3) = 1 Weapon, 1 Armor; (4) = 2 Weapon, 1 Armor; (5) = 3 Weapon, 1 Armor, 1 Shield
@@ -423,24 +423,24 @@ Hardpoints: (3) = 1 Weapon, 1 Armor; (4) = 2 Weapon, 1 Armor; (5) = 3 Weapon, 1 
     362 RUFS Unipilot Battleship (2)
     363 RUFS Medium Battleship (3)
     364 RUFS Heavy Battleship (4)
-    365 RUFS 'Destruction of Gaia'
+    365 RUFS 'Destruction of Gaia' (5)
     366 AMV Battleship Drone (1)
     367 AMV Unipilot Battleship (2)
     368 AMV Medium Battleship (3)
     369 AMV Heavy Battleship (4)
-    370 AMV 'Freya's Guidance'
+    370 AMV 'Freya's Guidance' (5)
     371 DIC Battleship Drone (1)
     372 DIC Unipilot Battleship (2)
     373 DIC Medium Battleship (3)
     374 DIC Heavy Battleship (4)
-    375 DIC 'Lhai Al Lhai'
+    375 DIC 'Lhai Al Lhai' (5)
     376 LBS Battleship Drone (1)
     377 LBS Unipilot Battleship (2)
     378 LBS Medium Battleship (3)
     379 LBS Heavy Battleship (4)
-    380 LBS 'Enmity of Crius'
+    380 LBS 'Enmity of Crius' (5)
     381 STS Battleship Drone (1)
     382 STS Unipilot Battleship (2)
     383 STS Medium Battleship (3)
     384 STS Heavy Battleship (4)
-    385 STS 'Celestial Vengeance'
+    385 STS 'Celestial Vengeance' (5)

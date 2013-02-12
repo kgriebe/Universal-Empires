@@ -9,6 +9,61 @@ from Data.gamedata import *
 from Controllers.prompt import prompt
 import __builtin__
 import salvage_missions
+from random import choice
+
+def pull_generator(pulls, race):
+    with open("./Data/ships.json") as ships_json:
+        ship_data = json.load(ships_json)
+    pull_list = []
+    result_list = []
+    counter = 0
+    for item in ship_list:
+        if ship_data[str(item)]["rarity"] == 5:
+            item = str(item)
+            pull_list.append(item)
+        elif ship_data[str(item)]["rarity"] == 4:
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+        elif ship_data[str(item)]["rarity"] == 3:
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+            pull_list.append(item)
+    for ship in bonus_list:
+        if ship_data[str(ship)]["rarity"] == 5:
+            pull_list.append(ship)
+        elif ship_data[str(ship)]["rarity"] == 4:
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+        elif ship_data[str(ship)]["rarity"] == 3:
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+            pull_list.append(ship)
+    while counter < int(pulls):
+        result = choice(pull_list)
+        counter += 1
+        result_list.append(result)
+    return result_list
+
 
 
 def general_view_creator():
@@ -25,15 +80,11 @@ def number_check(potential_number):
 def agent_view_creator(selection):
     # Set variables and open files
     counter = 1
-    withw = {}
+    priority_dict = {}
 
-    priority_dict open("./Data/ships.json") as ships_json:
+    with open("./Data/ships.json") as ships_json:
         ship_data = json.load(ships_json)
     user = __builtin__.active_user
-
-    # Check to see if general or race-specific agent was entered
-    if selection == "general":
-        general_view_creator()
 
     # Begin generating race-specific agent view
     os.system('clear')
@@ -43,26 +94,9 @@ def agent_view_creator(selection):
     sys.stdout.write(empty_line)
     sys.stdout.write(beginning_line + " Current ships with x2 salvage rate:" + " "*14 + end_line)
     # Check to see what agent/race we should be displaying.
-    if selection == "rufs":
-        for item in rufs_bonus:
-            string = ship_data[str(item)]["name"]
-            sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
-    elif selection == "sts":
-        for item in sts_bonus:
-            string = ship_data[str(item)]["name"]
-            sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
-    elif selection == "lbs":
-        for item in lbs_bonus:
-            string = ship_data[str(item)]["name"]
-            sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
-    elif selection == "dic":
-        for item in dic_bonus:
-            string = ship_data[str(item)]["name"]
-            sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
-    elif selection == "amv":
-        for item in amv_bonus:
-            string = ship_data[str(item)]["name"]
-            sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
+    for item in bonus_list:
+        string = ship_data[str(item)]["name"]
+        sys.stdout.write(beginning_line + "     " + string + " "*(45 - len(string)) + end_line)
     sys.stdout.write(empty_line)
     sys.stdout.write(full_line*3)
     sys.stdout.write("\n")
@@ -137,7 +171,9 @@ def agent_view_creator(selection):
             print "Invalid Selection"
             sleep(2)
             agent_view_creator(selection)
-
+    
+    final_pull_list = pull_generator(tech_spend, selection)
+    print final_pull_list
 
 def agent_view(selection):
     if selection == "general":
