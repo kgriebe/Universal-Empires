@@ -9,6 +9,7 @@ from Data.gamedata import current_agents
 from Controllers.commands import command_process
 import selection_screen
 from time import sleep
+from agent import agent_view
 
 def length_finder(id, attribute):
     result = len(str(ship_json[str(id)][attribute]))
@@ -21,31 +22,17 @@ def selector(selection):
     elif selection == "help":
         helpfile = open('./Data/salvage_agents.help', 'r')
         os.system('clear')
-        print "\n"
+        sys.stdout.write("\n")
         for line in helpfile:
             sys.stdout.write(line)
-        print "\n"
+        sys.stdout.write("\n")
         sub_selection = raw_input("Back | Exit".center(80) + "\n\n" + prompt(user))
         command_process(sub_selection)
         if sub_selection == "back":
             salvage_missions()
-
     else:
         if selection in current_agents:
-            os.system('clear')
-            sys.stdout.write(full_line*3)
-            sys.stdout.write(empty_line)
-            sys.stdout.write(full_line*3)
-            sub_selection = raw_input("Back | Exit".center(80) + "\n\n" + prompt(user))
-            sub_selection = sub_selection.lower()
-            command_process(sub_selection)
-            if sub_selection == "back":
-                salvage_missions()
-            else:
-                print "Invalid Selection."
-                sleep(2)
-                selector(selection)
-            
+            agent_view(selection)            
         else:
             print "Invalid Selection."
             sleep(2)
@@ -71,7 +58,7 @@ def salvage_missions():
     sys.stdout.write(beginning_line + tech_string.center(50) + end_line)
     sys.stdout.write(empty_line)
     sys.stdout.write(full_line*3)
-    print "\n\n"
+    sys.stdout.write("\n")
     selection = raw_input("Agent | Back | Help | Exit".center(80) + "\n\n" + prompt(user))
     selection = selection.lower()
     command_process(selection)

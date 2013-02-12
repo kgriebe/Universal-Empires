@@ -51,8 +51,7 @@ def selection_process(input):
         id = raw_input("\nPlease enter the ID number of the ship:\n")
         if int(id) in player_ship_list:
             info_generator(id)
-            print "\n\n"
-            print "\n"
+            sys.stdout.write("\n")
             selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
             if selection.lower() == "back":
                 os.system('clear')
@@ -113,7 +112,7 @@ def roster_view(user):
         roster_view_file = open('./Data/roster.txt')
     for line in roster_view_file:
         sys.stdout.write(line)
-    print "\n"
+    sys.stdout.write("\n")
     selection = raw_input("Info | Back | Exit".center(80) + "\n\n" + prompt(__builtin__.active_user))
     selection_process(selection)
 

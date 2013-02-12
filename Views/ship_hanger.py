@@ -88,7 +88,7 @@ def ship_hanger():
         hanger_screen = open("./Data/ship_hanger.txt", 'r')
         for line in hanger_screen:
             sys.stdout.write(line)
-        print "\n"
+        sys.stdout.write("\n")
         os.remove("./Data/ship_hanger.txt")
     else:
         print "Error creating ship hanger view.  Exiting."

@@ -1,1 +1,6 @@
 current_agents = ["general", "rufs", "sts", "dic", "amv", "lbs"]
+rufs_bonus = [232, 214]
+amv_bonus = []
+dic_bonus = []
+lbs_bonus = []
+sts_bonus = []

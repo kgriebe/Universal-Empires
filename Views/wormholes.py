@@ -57,9 +57,9 @@ def wormholes_view():
     os.system('clear')
     view_generator()
     wormholes_view = open('./Data/wormholes_screen.txt', 'r')
-    print "\n"
+    sys.stdout.write("\n")
     for line in wormholes_view:
         sys.stdout.write(line)
-    print "\n\n"
+    sys.stdout.write("\n")
     selection = raw_input(prompt(__builtin__.active_user))
     selection_process(selection.lower())

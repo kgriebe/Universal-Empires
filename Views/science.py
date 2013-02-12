@@ -38,7 +38,7 @@ def science_view():
     os.system('clear')
     for line in science_file:
         sys.stdout.write(line)
-    print "\n"
+    sys.stdout.write("\n")
     selection = raw_input("Applied Research".center(80) + "\n\n" + prompt(__builtin__.active_user))
     command_process(selection)
     selection_process(selection)

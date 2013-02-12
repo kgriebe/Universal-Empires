@@ -34,7 +34,7 @@ def selection_screen():
 	os.system('clear')
 	for line in selection_screen:
 		sys.stdout.write(line)
-	print "\n"
+	sys.stdout.write("\n")
 	menu = "Ship Hanger | Wormholes | Salvage Missions | Communications | Exit"
 	print menu.center(80) + "\n"
 	selection_process()
