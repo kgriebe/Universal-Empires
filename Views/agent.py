@@ -11,6 +11,101 @@ import __builtin__
 import salvage_missions
 from random import choice
 
+def priority_assign(pull_list, priority_dict):
+    user = __builtin__.active_user
+    with open("./Players/" + user + ".data") as player_json:
+        player_data = json.load(player_json)
+
+    with open("./Data/ships.json") as ships_json:
+        ships_data = json.load(ships_json)
+    priority_comparison_1 = []
+    priority_comparison_2 = []
+    priority_comparison_3 = []
+    priority_comparison_4 = []
+    priority_comparison_5 = []
+
+    for key, value in priority_dict.iteritems():
+        if str(value) in pull_list:
+            if str(key) == "1":
+                priority_comparison_1.append(value)
+            elif str(key) == "2":
+                priority_comparison_2.append(value)
+            elif str(key) == "3":
+                priority_comparison_3.append(value)
+            elif str(key) == "4":
+                priority_comparison_4.append(value)
+            elif str(key) == "5":
+                priority_comparison_5.append(value)
+        else:
+            pass
+    if priority_comparison_1:
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
+        old_ships_list = player_data[user]["ship_list"]
+        new_ships_list = old_ships_list
+        new_ships_list.append(priority_comparison_1[0])
+        new_player_data = {}
+        for key, value in player_data[user].iteritems():
+            if key == "ship_list":
+                pass
+            else:
+                new_player_data[key] = value
+        new_player_data["ship_list"] = new_ships_list
+        print new_player_data
+    elif priority_comparison_2:
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_2[0])]["name"])
+        old_ships_list = player_data[user]["ship_list"]
+        new_ships_list = old_ships_list
+        new_ships_list.append(priority_comparison_2[0])
+        new_player_data = {}
+        for key, value in player_data[user].iteritems():
+            if key == "ship_list":
+                pass
+            else:
+                new_player_data[key] = value
+        new_player_data["ship_list"] = new_ships_list
+        print new_player_data
+    elif priority_comparison_3:
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_3[0])]["name"])
+        old_ships_list = player_data[user]["ship_list"]
+        new_ships_list = old_ships_list
+        new_ships_list.append(priority_comparison_3[0])
+        new_player_data = {}
+        for key, value in player_data[user].iteritems():
+            if key == "ship_list":
+                pass
+            else:
+                new_player_data[key] = value
+        new_player_data["ship_list"] = new_ships_list
+        print new_player_data
+    elif priority_comparison_4:
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_4[0])]["name"])
+        old_ships_list = player_data[user]["ship_list"]
+        new_ships_list = old_ships_list
+        new_ships_list.append(priority_comparison_4[0])
+        new_player_data = {}
+        for key, value in player_data[user].iteritems():
+            if key == "ship_list":
+                pass
+            else:
+                new_player_data[key] = value
+        new_player_data["ship_list"] = new_ships_list
+        print new_player_data
+    elif priority_comparison_5:
+        print "You have been awarded %s" % str(ships_data[str(priority_comparison_5[0])]["name"])
+        old_ships_list = player_data[user]["ship_list"]
+        new_ships_list = old_ships_list
+        new_ships_list.append(priority_comparison_5[0])
+        new_player_data = {}
+        for key, value in player_data[user].iteritems():
+            if key == "ship_list":
+                pass
+            else:
+                new_player_data[key] = value
+        new_player_data["ship_list"] = new_ships_list
+    else:
+        print "You have been awarded: %s" % str(ships_data[str(choice(pull_list))]["name"])
+    
+
 def pull_generator(pulls, race):
     with open("./Data/ships.json") as ships_json:
         ship_data = json.load(ships_json)
@@ -62,6 +157,7 @@ def pull_generator(pulls, race):
         result = choice(pull_list)
         counter += 1
         result_list.append(result)
+    result_list.append("232")
     return result_list
 
 
@@ -128,14 +224,18 @@ def agent_view_creator(selection):
                 while counter <= target_number:
                     ship = raw_input("Please enter the identificiation number of priority target %s:\n" % counter)
                     ship_id = number_check(ship)
-                    # If the target ID is valid, enter it to the priority dict
-                    if str(ship_id) in ship_data:
-                        priority_dict[counter] = ship_id
-                    # If the target ID is invalid, notify player and go back to agent_view
-                    else:
-                        print "That identifier is not valid."
-                        sleep(2)
+                    # If the target ID is valid, check to make sure the player hasn't already added it
+                    if str(ship_id) in priority_dict.items():
+                        print "Error: You may only select each ship one time."
                         agent_view_creator(selection)
+                    else:
+                        if str(ship_id) in ship_data:
+                            priority_dict[counter] = ship_id
+                    # If the target ID is invalid, notify player and go back to agent_view
+                        else:
+                            print "That identifier is not valid."
+                            sleep(2)
+                            agent_view_creator(selection)
                     counter += 1
             # If input is between 5 and 10, ask player how many ships for priority list
             elif tech_spend > 5 and tech_spend <= 10:
@@ -171,9 +271,8 @@ def agent_view_creator(selection):
             print "Invalid Selection"
             sleep(2)
             agent_view_creator(selection)
-    
     final_pull_list = pull_generator(tech_spend, selection)
-    print final_pull_list
+    result = priority_assign(final_pull_list, priority_dict)
 
 def agent_view(selection):
     if selection == "general":
