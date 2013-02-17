@@ -39,27 +39,27 @@ def new_player(user, race, password):
     x.tech = "0"
     # Use this list to set the default ships dependant upon race.
     if race.lower() == "rufs":
-        x.ship_list = [1, 26, 51]
+        x.ship_list = {"1": [1], "26": [1], "51": [1]}
         x.active_ship_list = x.ship_list
         x.wormholes = [1]
         x.sectors = [2]
     elif race.lower() == "amv":
-        x.ship_list = [6, 31, 56]
+        x.ship_list = {"6": [1], "31": [1], "56": [1]}
         x.active_ship_list = x.ship_list
         x.wormholes = [1]
         x.sectors = [3]
     elif race.lower() == "dic":
-        x.ship_list = [11, 36, 61]
+        x.ship_list = {"11": [1], "36": [1], "61": [1]}
         x.active_ship_list = x.ship_list
         x.wormholes = [1]
         x.sectors = [4]
     elif race.lower() == "lbs":
-        x.ship_list = [16, 41, 66]
+        x.ship_list = {"16": [1], "41": [1], "66": [1]}
         x.active_ship_list = x.ship_list
         x.wormholes = [1]
         x.sectors = [5]
     elif race.lower() == "sts":
-        x.ship_list = [21, 46, 71]
+        x.ship_list = {"21": [1], "46": [1], "71": [1]}
         x.active_ship_list = x.ship_list
         x.wormholes = [1]
         x.sectors = [6]

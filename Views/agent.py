@@ -23,6 +23,7 @@ def priority_assign(pull_list, priority_dict):
     priority_comparison_3 = []
     priority_comparison_4 = []
     priority_comparison_5 = []
+    final_player_data = {}
 
     for key, value in priority_dict.iteritems():
         if str(value) in pull_list:
@@ -42,7 +43,11 @@ def priority_assign(pull_list, priority_dict):
         print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
         old_ships_list = player_data[user]["ship_list"]
         new_ships_list = old_ships_list
-        new_ships_list.append(priority_comparison_1[0])
+        if str(priority_comparison_1[0]) in new_ships_list:
+            target_list = new_ships_list[str(priority_comparison_1[0])]
+            target_list.append(str(choice(range(1, 30))))
+        else:
+            new_ships_list[str(priority_comparison_1[0])] = [str(choice(range(1, 30)))]
         new_player_data = {}
         for key, value in player_data[user].iteritems():
             if key == "ship_list":
@@ -52,10 +57,14 @@ def priority_assign(pull_list, priority_dict):
         new_player_data["ship_list"] = new_ships_list
         print new_player_data
     elif priority_comparison_2:
-        print "You have been awarded %s." % str(ships_data[str(priority_comparison_2[0])]["name"])
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
         old_ships_list = player_data[user]["ship_list"]
         new_ships_list = old_ships_list
-        new_ships_list.append(priority_comparison_2[0])
+        if str(priority_comparison_2[0]) in new_ships_list:
+            target_list = new_ships_list[str(priority_comparison_2[0])]
+            target_list.append(str(choice(range(1, 30))))
+        else:
+            new_ships_list[str(priority_comparison_2[0])] = [str(choice(range(1, 30)))]
         new_player_data = {}
         for key, value in player_data[user].iteritems():
             if key == "ship_list":
@@ -65,10 +74,14 @@ def priority_assign(pull_list, priority_dict):
         new_player_data["ship_list"] = new_ships_list
         print new_player_data
     elif priority_comparison_3:
-        print "You have been awarded %s." % str(ships_data[str(priority_comparison_3[0])]["name"])
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
         old_ships_list = player_data[user]["ship_list"]
         new_ships_list = old_ships_list
-        new_ships_list.append(priority_comparison_3[0])
+        if str(priority_comparison_3[0]) in new_ships_list:
+            target_list = new_ships_list[str(priority_comparison_3[0])]
+            target_list.append(str(choice(range(1, 30))))
+        else:
+            new_ships_list[str(priority_comparison_3[0])] = [str(choice(range(1, 30)))]
         new_player_data = {}
         for key, value in player_data[user].iteritems():
             if key == "ship_list":
@@ -78,10 +91,14 @@ def priority_assign(pull_list, priority_dict):
         new_player_data["ship_list"] = new_ships_list
         print new_player_data
     elif priority_comparison_4:
-        print "You have been awarded %s." % str(ships_data[str(priority_comparison_4[0])]["name"])
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
         old_ships_list = player_data[user]["ship_list"]
         new_ships_list = old_ships_list
-        new_ships_list.append(priority_comparison_4[0])
+        if str(priority_comparison_4[0]) in new_ships_list:
+            target_list = new_ships_list[str(priority_comparison_4[0])]
+            target_list.append(str(choice(range(1, 30))))
+        else:
+            new_ships_list[str(priority_comparison_4[0])] = [str(choice(range(1, 30)))]
         new_player_data = {}
         for key, value in player_data[user].iteritems():
             if key == "ship_list":
@@ -91,10 +108,14 @@ def priority_assign(pull_list, priority_dict):
         new_player_data["ship_list"] = new_ships_list
         print new_player_data
     elif priority_comparison_5:
-        print "You have been awarded %s" % str(ships_data[str(priority_comparison_5[0])]["name"])
+        print "You have been awarded %s." % str(ships_data[str(priority_comparison_1[0])]["name"])
         old_ships_list = player_data[user]["ship_list"]
         new_ships_list = old_ships_list
-        new_ships_list.append(priority_comparison_5[0])
+        if str(priority_comparison_5[0]) in new_ships_list:
+            target_list = new_ships_list[str(priority_comparison_5[0])]
+            target_list.append(str(choice(range(1, 30))))
+        else:
+            new_ships_list[str(priority_comparison_5[0])] = [str(choice(range(1, 30)))]
         new_player_data = {}
         for key, value in player_data[user].iteritems():
             if key == "ship_list":
@@ -102,8 +123,14 @@ def priority_assign(pull_list, priority_dict):
             else:
                 new_player_data[key] = value
         new_player_data["ship_list"] = new_ships_list
+        print new_player_data
     else:
         print "You have been awarded: %s" % str(ships_data[str(choice(pull_list))]["name"])
+    final_player_data[user] = new_player_data
+    f = open('./Players/' + user + ".data", 'w')
+    json_data = json.dumps(final_player_data)
+    f.write(json_data)
+    f.close()
     
 
 def pull_generator(pulls, race):
