@@ -1,6 +1,9 @@
 #!/usr/bin/python
 
-
+import os, sys
+import json
+import random
+from collections import defaultdict
 
 
 
@@ -8,6 +11,12 @@
 hp_cost = 1
 attack_cost = 3
 repair_cost = 1.5
+
+rare1_max_levels = 16
+rare2_max_levels = 26
+rare3_max_levels = 51
+rare4_max_levels = 76
+rare5_max_levels = 100
 
 support = {"hp": 4, "attack": 2, "repair": 6}
 defense_platform = {"hp": 7, "attack": 1, "repair": 3}
@@ -27,3 +36,101 @@ targetting_ship = {"hp": 2, "attack": 7, "repair": 3}
 mobile_fleet_depot = {"hp": 8, "attack": 3, "repair": 10}
 destroyer = {"hp": 3, "attack": 6, "repair": 2}
 battleship = {"hp": 7, "attack": 8, "repair": 4}
+
+def main():
+    with open('ships.json') as ships_json:
+        ships_data = json.load(ships_json)
+    ship_hp_dict = {}
+    ship_repair_dict = {}
+    ship_attack_dict = {}
+    hp_table_file = open('hp.json', 'w')
+    support1_hp_dict = {}
+
+    for i in range(1, 26): #Support
+        id = str(i)
+        level_hp = 0
+        level_dict = {}
+        if ships_data[str(i)]["rarity"] == 1:
+            max_hp = support["hp"] * 100
+            choice_min = -10 * support["hp"]
+            choice_max = 10 * support["hp"]
+            for i in range(1, rare1_max_levels):
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(choice_min, choice_max)
+                level_dict[str(i)] = level_hp
+                support1_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+        elif ships_data[str(i)]["rarity"] == 2:
+            support2_hp_dict = {}
+            max_hp = support["hp"] * 150
+            choice_min = -10 * support["hp"]
+            choice_max = 10 * support["hp"]
+            for i in range(1, rare2_max_levels):
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(choice_min, choice_max)
+                level_dict[str(i)] = level_hp
+                support2_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+        elif ships_data[str(i)]["rarity"] == 3:
+            support3_hp_dict = {}
+            max_hp = support["hp"] * 250
+            choice_min = -10 * support["hp"]
+            choice_max = 10 * support["hp"]
+            for i in range(1, rare3_max_levels):
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(choice_min, choice_max)
+                level_dict[str(i)] = level_hp
+                support3_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+        elif ships_data[str(i)]["rarity"] == 4:
+            support4_hp_dict = {}
+            max_hp = support["hp"] * 500
+            choice_min = -10 * support["hp"]
+            choice_max = 10 * support["hp"]
+            for i in range(1, rare4_max_levels):
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(choice_min, choice_max)
+                level_dict[str(i)] = level_hp
+                support4_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+        elif ships_data[str(i)]["rarity"] == 5:
+            support5_hp_dict = {}
+            max_hp = support["hp"] * 1000
+            choice_min = -10 * support["hp"]
+            choice_max = 10 * support["hp"]
+            for i in range(1, rare5_max_levels):
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(choice_min, choice_max)
+                level_dict[str(i)] = level_hp
+                support5_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+        print support1_hp_dict
+        file_data = json.dumps(support1_hp_dict)
+        hp_table_file.write(file_data)
+    for i in range(26, 51): #Defense Platforms
+        pass
+    for i in range(51, 76): #Cruiser
+        pass
+    for i in range(76, 101): #Interdictors
+        pass
+    for i in range(101, 121): #Carrier
+        pass
+    for i in range(121, 146): #Corvette
+        pass
+    for i in range(146, 171): #Bomber
+        pass
+    for i in range(171, 196): #Fighter
+        pass
+    for i in range(196, 211): #Dreadnaught
+        pass
+    for i in range(211, 221): #Leviathan
+        pass
+    for i in range(221, 231): #Super Destroyer
+        pass
+    for i in range(231, 236): #Star Station
+        pass
+    for i in range(236, 261): #Harvesters
+        pass
+    for i in range(261, 286): #Mine Layers
+        pass
+    for i in range(286, 311): #Targetting Ships
+        pass
+    for i in range(311, 336): #Mobile Fleet Depot
+        pass
+    for i in range(336, 361): #Destroyers
+        pass
+    for i in range(361, 386): #Battleships
+        pass
+    
+if __name__ == "__main__":
+    main()
