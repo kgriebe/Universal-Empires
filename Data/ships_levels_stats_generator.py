@@ -45,9 +45,14 @@ def main():
     ship_attack_dict = {}
     hp_table_file = open('hp.json', 'w')
     support1_hp_dict = {}
+    support2_hp_dict = {}
+    support3_hp_dict = {}
+    support4_hp_dict = {}
+    support5_hp_dict = {}
 
-    for i in range(1, 26): #Support
-        id = str(i)
+    for i in range(1, 25): #Support
+        id = i
+        id = str(id)
         level_hp = 0
         level_dict = {}
         if ships_data[str(i)]["rarity"] == 1:
@@ -57,7 +62,8 @@ def main():
             for i in range(1, rare1_max_levels):
                 level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(choice_min, choice_max)
                 level_dict[str(i)] = level_hp
-                support1_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+            ident = ships_data[id]["ident"]
+            support1_hp_dict[ident] = level_dict
         elif ships_data[str(i)]["rarity"] == 2:
             support2_hp_dict = {}
             max_hp = support["hp"] * 150
@@ -66,7 +72,8 @@ def main():
             for i in range(1, rare2_max_levels):
                 level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(choice_min, choice_max)
                 level_dict[str(i)] = level_hp
-                support2_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+            ident = ships_data[id]["ident"]
+            support2_hp_dict[ident] = level_dict
         elif ships_data[str(i)]["rarity"] == 3:
             support3_hp_dict = {}
             max_hp = support["hp"] * 250
@@ -75,7 +82,8 @@ def main():
             for i in range(1, rare3_max_levels):
                 level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(choice_min, choice_max)
                 level_dict[str(i)] = level_hp
-                support3_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+            ident = ships_data[id]["ident"]            
+            support3_hp_dict[ident] = level_dict
         elif ships_data[str(i)]["rarity"] == 4:
             support4_hp_dict = {}
             max_hp = support["hp"] * 500
@@ -84,7 +92,8 @@ def main():
             for i in range(1, rare4_max_levels):
                 level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(choice_min, choice_max)
                 level_dict[str(i)] = level_hp
-                support4_hp_dict[ships_data[str(i)]["ident"]] = level_dict
+            ident = ships_data[id]["ident"]
+            support4_hp_dict[ident] = level_dict
         elif ships_data[str(i)]["rarity"] == 5:
             support5_hp_dict = {}
             max_hp = support["hp"] * 1000
@@ -93,10 +102,16 @@ def main():
             for i in range(1, rare5_max_levels):
                 level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(choice_min, choice_max)
                 level_dict[str(i)] = level_hp
-                support5_hp_dict[ships_data[str(i)]["ident"]] = level_dict
-        print support1_hp_dict
-        file_data = json.dumps(support1_hp_dict)
-        hp_table_file.write(file_data)
+            ident = ships_data[id]["ident"]
+            support5_hp_dict[ident] = level_dict
+        ship_hp_dict.update(support1_hp_dict)
+        ship_hp_dict.update(support2_hp_dict)
+        ship_hp_dict.update(support3_hp_dict)
+        ship_hp_dict.update(support4_hp_dict)
+        ship_hp_dict.update(support5_hp_dict)
+    print ship_hp_dict
+    file_data = json.dumps(ship_hp_dict)
+    hp_table_file.write(file_data)
     for i in range(26, 51): #Defense Platforms
         pass
     for i in range(51, 76): #Cruiser
