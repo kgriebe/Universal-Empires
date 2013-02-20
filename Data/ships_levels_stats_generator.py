@@ -8,15 +8,12 @@ from collections import defaultdict
 
 
 # Define Variables
-hp_cost = 1
-attack_cost = 3
-repair_cost = 1.5
 
 rare1_max_levels = 16
 rare2_max_levels = 26
 rare3_max_levels = 51
 rare4_max_levels = 76
-rare5_max_levels = 7 *0
+rare5_max_levels = 100
 
 support = {"hp": 4, "attack": 2, "repair": 6}
 defense = {"hp": 7, "attack": 1, "repair": 3}
