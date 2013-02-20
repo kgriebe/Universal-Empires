@@ -34,15 +34,15 @@ mobile_fleet_depot = {"hp": 8, "attack": 3, "repair": 10}
 destroyer = {"hp": 3, "attack": 6, "repair": 2}
 battleship = {"hp": 7, "attack": 8, "repair": 4}
 
-def main():
+def generator(number):
     with open('ships.json') as ships_json:
         ships_data = json.load(ships_json)
     ship_hp_dict = {}
     ship_repair_dict = {}
     ship_attack_dict = {}
-    hp_table_file = open('hp.json', 'w')
-    attack_table_file = open('attack.json', 'w')
-    repair_table_file = open('repair.json', 'w')
+    hp_table_file = open('../Test/hp' + number + '.json', 'w')
+    attack_table_file = open('../Test/attack' + number + '.json', 'w')
+    repair_table_file = open('../Test/repair' + number + '.json', 'w')
     support1_hp_dict = {}
     support2_hp_dict = {}
     support3_hp_dict = {}
@@ -3128,6 +3128,13 @@ def main():
     attack_table_file.write(attack_string)
     repair_string = json.dumps(ship_repair_dict)
     repair_table_file.write(repair_string)
+    
 
+def interface(number):
+    for i in range(0, int(number)):
+        generator(str(i))
+        
 if __name__ == "__main__":
-    main()
+    number = sys.argv[1]
+    for i in range(0, int(number)):
+        generator(str(i))
