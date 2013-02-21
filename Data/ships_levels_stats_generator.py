@@ -331,7 +331,7 @@ def generator(number):
             max_hp = support["hp"] * 100
             max_attack = support["attack"] * 20
             max_repair = support["repair"] * 10
-            hp_choice_min = 1 * support["hp"]
+            hp_choice_min = support["hp"] / 200
             attack_choice_min = 1 * support["attack"]
             repair_choice_min = 1 * support["repair"]
             hp_choice_max = 2 * support["hp"]
@@ -339,6 +339,14 @@ def generator(number):
             repair_choice_max = 2 * support["repair"]
             
             for i in range(1, rare1_max_levels):
+#				if i == rare1_max_levels:
+#					level_hp = max_hp
+#                    level_attack = max_attack
+#                    level_repair = max_repair
+#                else:
+#                    level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
+#                    level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
+#                    level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
                 level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
                 level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
                 level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)

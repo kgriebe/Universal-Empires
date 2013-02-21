@@ -28,7 +28,7 @@ def json_testing():
 #    string = json.dumps(new_dict, indent=4)
 #    testfile.write(string)
 #    testfile.close()
-
+	pass
 
 def json_confirm():
     with open('testing.json', 'r') as testing_json:
@@ -41,8 +41,14 @@ def json_confirm():
 
 
 def main():
-    json_testing()
-    json_confirm()
+	total = 0
+	for i in range(0, 100):
+		num = i * 1.1
+		total = total + num
+	print total
+
+#    json_testing()
+#    json_confirm()
 
 
 if __name__ == "__main__":

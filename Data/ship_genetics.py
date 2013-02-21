@@ -49,7 +49,6 @@ def fitness_eval():
 	                    if value2 * .9 <= value1 <= value2 * 1.1:
 	                        pass
 	                    else:
-	                        print "Increasing Fitness for 25 Level"
 	                        fitness += 1
 	        elif len(attack_data[file_number][ship_id]) == 50:
 	            for i in range(1, 51):
@@ -60,7 +59,6 @@ def fitness_eval():
 	                    if value2 * .9 <= value1 <= value2 * 1.1:
 	                        pass
 	                    else:
-	                        print "Increasing Fitness for 50 Level"
 	                        fitness += 1
 	        elif len(attack_data[file_number][ship_id]) == 75:
 	            for i in range(1, 76):
@@ -71,7 +69,6 @@ def fitness_eval():
 	                    if value2 * .9 <= value1 <= value2 * 1.1:
 	                        pass
 	                    else:
-	                        print "Increasing Fitness for 75 Level"
 	                        fitness += 1
 	        elif len(attack_data[file_number][ship_id]) == 99:
 	            for i in range(1, 76):
@@ -82,10 +79,10 @@ def fitness_eval():
 	                    if value2 * .9 <= value1 <= value2 * 1.1:
 	                        pass
 	                    else:
-	                        print "Increasing Fitness for 99 Level"
 	                        fitness += 1
 	    attack_fitness_dict[file_number] = fitness
 	print sorted(attack_fitness_dict.items(), key=lambda x: x[1])
+	print attack_data[2]["232"]["99"]
 	
 
 	
