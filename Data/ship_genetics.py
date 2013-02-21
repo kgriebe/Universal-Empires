@@ -4,49 +4,54 @@ import os, sys
 import json
 import random
 import ships_levels_stats_generator
+import collections
 
-def main():
+def fitness_eval():
 	number = 10
+	attack_data = {}
+	hp_data = {}
+	repair_data = {}
+	attack_fitness_dict = {}
+	hp_fitness_dict = {}
+	repair_fitness_dict = {}
+
+
+#	attack_data = collections.defaultdict(dict)
+#	hp_data = collections.defaultdict(dict)
+#	repair_data = collections.defaultdict(dict)
 	ships_levels_stats_generator.interface(str(number))
 	
+	# format is {file_number {ship_id {level: value}}}
 	for i in range(0, number):
 	    with open('../Test/attack%s.json' % i) as attack_json:
-	        attack_data = json.load(attack_json)
+	        attack_data[i] = json.load(attack_json)
 	    with open('../Test/hp%s.json' % i) as hp_json:
-	        hp_data = json.load(hp_json)
+	        hp_data[i] = json.load(hp_json)
 	    with open('../Test/repair%s.json' % i) as repair_json:
-	        repair_data = json.load(repair_json)
-	        
-	    for key in sorted(attack_data.iterkeys()):
-	        if len(attack_data[key]) < 20:
-	            print "Under 20."
-	        elif len(attack_data[key]) < 30:
-	            print "Under 30."
-	        elif len(attack_data[key]) < 60:
-	            print "Under 50."
-	        elif len(attack_data[key]) < 80:
-	            print "Under 80."
-	        else:
-	            print "Over 80."
+	        repair_data[i] = json.load(repair_json)
+
+#	print attack_data
+	for file_number in attack_data.iterkeys():
+	    fitness = 0
+	    for ship_id in attack_data[file_number].iterkeys():
+	        if len(attack_data[file_number][ship_id]) < 20:
+	            for i in range(1, 16):
+	                level = str(i)
+	                value1 = attack_data[file_number][ship_id][level]
+	                for i in range(0, number):
+	                    value2 = attack_data[i][ship_id][level]
+	                    if value2 * .9 <= value1 <= value2 * 1.1:
+	                        pass
+	                    else:
+#	                        print "Increasing Fitness: [%s, %s, %s-%s]" % (value1, value2, value2 * .9, value2 * 1.1)
+	                        fitness+=1
+	                
+	                
+	    attack_fitness_dict[file_number] = fitness
+	print sorted(attack_fitness_dict.items(), key=lambda x: x[1])
 	
-	
-	
-	
-#	with open('attack.json') as attack_json:
-#		attack_data = json.load(attack_json)
-#	with open('hp.json') as hp_json:
-#		hp_data = json.load(hp_json)
-#	with open('repair.json') as repair_json:
-#		repair_data = json.load(repair_json)
-
-
-
-
-
-
-
-
-
+def main():
+    fitness_eval()
 
 if __name__ == "__main__":
 	main()
