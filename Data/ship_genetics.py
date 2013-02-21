@@ -15,10 +15,6 @@ def fitness_eval():
 	hp_fitness_dict = {}
 	repair_fitness_dict = {}
 
-
-#	attack_data = collections.defaultdict(dict)
-#	hp_data = collections.defaultdict(dict)
-#	repair_data = collections.defaultdict(dict)
 	ships_levels_stats_generator.interface(str(number))
 	
 	# format is {file_number {ship_id {level: value}}}
@@ -30,7 +26,6 @@ def fitness_eval():
 	    with open('../Test/repair%s.json' % i) as repair_json:
 	        repair_data[i] = json.load(repair_json)
 
-#	print attack_data
 	for file_number in attack_data.iterkeys():
 	    fitness = 0
 	    for ship_id in attack_data[file_number].iterkeys():
