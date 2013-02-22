@@ -344,12 +344,12 @@ def generator(number):
 #                    level_attack = max_attack
 #                    level_repair = max_repair
 #                else:
-#                    level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-#                    level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-#                    level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+#                    level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+#                    level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+#                    level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -373,9 +373,9 @@ def generator(number):
             repair_choice_max = 3 * support["repair"]
             
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -399,9 +399,9 @@ def generator(number):
             repair_choice_max = 4 * support["repair"]
             
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -425,9 +425,9 @@ def generator(number):
             repair_choice_max = 5 * support["repair"]
             
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -451,9 +451,9 @@ def generator(number):
             repair_choice_max = 7 * support["repair"]
             
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -503,9 +503,9 @@ def generator(number):
             repair_choice_max = 2 * defense["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -529,9 +529,9 @@ def generator(number):
             repair_choice_max = 3 * defense["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -555,9 +555,9 @@ def generator(number):
             repair_choice_max = 4 * defense["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -581,9 +581,9 @@ def generator(number):
             repair_choice_max = 5 * defense["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -607,9 +607,9 @@ def generator(number):
             repair_choice_max = 7 * defense["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -659,9 +659,9 @@ def generator(number):
             repair_choice_max = 2 * cruiser["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -685,9 +685,9 @@ def generator(number):
             repair_choice_max = 3 * cruiser["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -711,9 +711,9 @@ def generator(number):
             repair_choice_max = 4 * cruiser["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -737,9 +737,9 @@ def generator(number):
             repair_choice_max = 5 * cruiser["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -763,9 +763,9 @@ def generator(number):
             repair_choice_max = 7 * cruiser["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -815,9 +815,9 @@ def generator(number):
             repair_choice_max = 2 * interdictor["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -841,9 +841,9 @@ def generator(number):
             repair_choice_max = 3 * interdictor["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -867,9 +867,9 @@ def generator(number):
             repair_choice_max = 4 * interdictor["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -893,9 +893,9 @@ def generator(number):
             repair_choice_max = 5 * interdictor["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -919,9 +919,9 @@ def generator(number):
             repair_choice_max = 7 * interdictor["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -971,9 +971,9 @@ def generator(number):
             repair_choice_max = 2 * carrier["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -997,9 +997,9 @@ def generator(number):
             repair_choice_max = 3 * carrier["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1023,9 +1023,9 @@ def generator(number):
             repair_choice_max = 4 * carrier["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1049,9 +1049,9 @@ def generator(number):
             repair_choice_max = 5 * carrier["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1075,9 +1075,9 @@ def generator(number):
             repair_choice_max = 7 * carrier["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1127,9 +1127,9 @@ def generator(number):
             repair_choice_max = 2 * corvette["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1153,9 +1153,9 @@ def generator(number):
             repair_choice_max = 3 * corvette["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1179,9 +1179,9 @@ def generator(number):
             repair_choice_max = 4 * corvette["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1205,9 +1205,9 @@ def generator(number):
             repair_choice_max = 5 * corvette["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1231,9 +1231,9 @@ def generator(number):
             repair_choice_max = 7 * corvette["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1283,9 +1283,9 @@ def generator(number):
             repair_choice_max = 2 * bomber["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1309,9 +1309,9 @@ def generator(number):
             repair_choice_max = 3 * bomber["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1335,9 +1335,9 @@ def generator(number):
             repair_choice_max = 4 * bomber["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1361,9 +1361,9 @@ def generator(number):
             repair_choice_max = 5 * bomber["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1387,9 +1387,9 @@ def generator(number):
             repair_choice_max = 7 * bomber["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1439,9 +1439,9 @@ def generator(number):
             repair_choice_max = 2 * fighter["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1465,9 +1465,9 @@ def generator(number):
             repair_choice_max = 3 * fighter["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1491,9 +1491,9 @@ def generator(number):
             repair_choice_max = 5 * fighter["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1517,9 +1517,9 @@ def generator(number):
             repair_choice_max = 5 * fighter["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1543,9 +1543,9 @@ def generator(number):
             repair_choice_max = 7 * fighter["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1595,9 +1595,9 @@ def generator(number):
             repair_choice_max = 2 * dreadnaught["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1621,9 +1621,9 @@ def generator(number):
             repair_choice_max = 3 * dreadnaught["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1647,9 +1647,9 @@ def generator(number):
             repair_choice_max = 5 * dreadnaught["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1673,9 +1673,9 @@ def generator(number):
             repair_choice_max = 5 * dreadnaught["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1699,9 +1699,9 @@ def generator(number):
             repair_choice_max = 7 * dreadnaught["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1751,9 +1751,9 @@ def generator(number):
             repair_choice_max = 2 * leviathan["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1777,9 +1777,9 @@ def generator(number):
             repair_choice_max = 3 * leviathan["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1803,9 +1803,9 @@ def generator(number):
             repair_choice_max = 5 * leviathan["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1829,9 +1829,9 @@ def generator(number):
             repair_choice_max = 5 * leviathan["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1855,9 +1855,9 @@ def generator(number):
             repair_choice_max = 7 * leviathan["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1907,9 +1907,9 @@ def generator(number):
             repair_choice_max = 2 * super_destroyer["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1933,9 +1933,9 @@ def generator(number):
             repair_choice_max = 3 * super_destroyer["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1959,9 +1959,9 @@ def generator(number):
             repair_choice_max = 5 * super_destroyer["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -1985,9 +1985,9 @@ def generator(number):
             repair_choice_max = 5 * super_destroyer["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2011,9 +2011,9 @@ def generator(number):
             repair_choice_max = 7 * super_destroyer["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2063,9 +2063,9 @@ def generator(number):
             repair_choice_max = 2 * star_station["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2089,9 +2089,9 @@ def generator(number):
             repair_choice_max = 3 * star_station["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2115,9 +2115,9 @@ def generator(number):
             repair_choice_max = 5 * star_station["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2141,9 +2141,9 @@ def generator(number):
             repair_choice_max = 5 * star_station["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2167,9 +2167,9 @@ def generator(number):
             repair_choice_max = 7 * star_station["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2219,9 +2219,9 @@ def generator(number):
             repair_choice_max = 2 * harvester["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2245,9 +2245,9 @@ def generator(number):
             repair_choice_max = 3 * harvester["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2271,9 +2271,9 @@ def generator(number):
             repair_choice_max = 5 * harvester["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2297,9 +2297,9 @@ def generator(number):
             repair_choice_max = 5 * harvester["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2323,9 +2323,9 @@ def generator(number):
             repair_choice_max = 7 * harvester["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2375,9 +2375,9 @@ def generator(number):
             repair_choice_max = 2 * mine_layer["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2401,9 +2401,9 @@ def generator(number):
             repair_choice_max = 3 * mine_layer["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2427,9 +2427,9 @@ def generator(number):
             repair_choice_max = 5 * mine_layer["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2453,9 +2453,9 @@ def generator(number):
             repair_choice_max = 5 * mine_layer["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2479,9 +2479,9 @@ def generator(number):
             repair_choice_max = 7 * mine_layer["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2531,9 +2531,9 @@ def generator(number):
             repair_choice_max = 2 * targetting["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2557,9 +2557,9 @@ def generator(number):
             repair_choice_max = 3 * targetting["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2583,9 +2583,9 @@ def generator(number):
             repair_choice_max = 5 * targetting["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2609,9 +2609,9 @@ def generator(number):
             repair_choice_max = 5 * targetting["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2635,9 +2635,9 @@ def generator(number):
             repair_choice_max = 7 * targetting["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2687,9 +2687,9 @@ def generator(number):
             repair_choice_max = 2 * mobile_fleet_depot["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2713,9 +2713,9 @@ def generator(number):
             repair_choice_max = 3 * mobile_fleet_depot["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2739,9 +2739,9 @@ def generator(number):
             repair_choice_max = 5 * mobile_fleet_depot["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2765,9 +2765,9 @@ def generator(number):
             repair_choice_max = 5 * mobile_fleet_depot["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2791,9 +2791,9 @@ def generator(number):
             repair_choice_max = 7 * mobile_fleet_depot["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2843,9 +2843,9 @@ def generator(number):
             repair_choice_max = 2 * destroyer["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2869,9 +2869,9 @@ def generator(number):
             repair_choice_max = 3 * destroyer["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2895,9 +2895,9 @@ def generator(number):
             repair_choice_max = 5 * destroyer["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2921,9 +2921,9 @@ def generator(number):
             repair_choice_max = 5 * destroyer["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2947,9 +2947,9 @@ def generator(number):
             repair_choice_max = 7 * destroyer["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -2999,9 +2999,9 @@ def generator(number):
             repair_choice_max = 2 * battleship["repair"]
         
             for i in range(1, rare1_max_levels):
-                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare1_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare1_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare1_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -3025,9 +3025,9 @@ def generator(number):
             repair_choice_max = 3 * battleship["repair"]
         
             for i in range(1, rare2_max_levels):
-                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare2_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare2_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare2_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -3051,9 +3051,9 @@ def generator(number):
             repair_choice_max = 5 * battleship["repair"]
         
             for i in range(1, rare3_max_levels):
-                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare3_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare3_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare3_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -3077,9 +3077,9 @@ def generator(number):
             repair_choice_max = 5 * battleship["repair"]
         
             for i in range(1, rare4_max_levels):
-                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare4_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare4_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare4_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair
@@ -3103,9 +3103,9 @@ def generator(number):
             repair_choice_max = 7 * battleship["repair"]
         
             for i in range(1, rare5_max_levels):
-                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(hp_choice_min, hp_choice_max)
-                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(attack_choice_min, attack_choice_max)
-                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(repair_choice_min, repair_choice_max)
+                level_hp = level_hp + (max_hp / rare5_max_levels) + random.randrange(-1, 5)
+                level_attack = level_attack + (max_attack / rare5_max_levels) + random.randrange(-1, 5)
+                level_repair = level_repair + (max_repair / rare5_max_levels) + random.randrange(-1, 5)
                 level_hp_dict[str(i)] = level_hp
                 level_attack_dict[str(i)] = level_attack
                 level_repair_dict[str(i)] = level_repair

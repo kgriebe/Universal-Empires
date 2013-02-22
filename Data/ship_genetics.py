@@ -82,7 +82,8 @@ def fitness_eval():
 	                        fitness += 1
 	    attack_fitness_dict[file_number] = fitness
 	print sorted(attack_fitness_dict.items(), key=lambda x: x[1])
-	print attack_data[2]["232"]["99"]
+	for i in range(0, 10):
+		print "File %i: %s" % (i, hp_data[i]["232"]["99"])
 	
 
 	
